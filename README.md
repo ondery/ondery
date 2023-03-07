@@ -4,7 +4,7 @@
 
 > A Frontend, backend developer, database specialist and a graphic designer from **İstanbul, Turkey**.
 
-### 🏗️ Working on:
+### 🏗️ Working with:
 
 <code><img src="https://img.shields.io/badge/.net-black.svg?style=for-the-badge&logo=.net"/></code>
 <code><img src="https://img.shields.io/badge/python-1e3e59.svg?style=for-the-badge&logo=python"/></code>
