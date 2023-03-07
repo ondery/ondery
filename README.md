@@ -1,4 +1,4 @@
-<p align="center"><img width="100%" src="./DALL·E.png" /></p>
+<p align="center"><img width="100%" src="./DALL·E2.png" /></p>
 
 ### Hi there, I am Öndery👋
 
