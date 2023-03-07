@@ -2,7 +2,7 @@
 
 ### Hi there, I am Öndery👋
 
-> A Front end developer from **İstanbul, Turkey**.
+> A Frontend, backend developer, database specialist and a graphic designer from **İstanbul, Turkey**.
 
 ### 🏗️ Working on:
 
@@ -11,7 +11,7 @@
 <code><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/></code>
 <code><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/></code>
 <code><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/></code>
-<code><img src="https://img.shields.io/badge/next.js-%23E0234E.svg?style=for-the-badge&logo=vercel&logoColor=black"/></code>
+<code><img src="https://img.shields.io/badge/next.js-black.svg?style=for-the-badge&logo=vercel"/></code>
 <code><img src="https://img.shields.io/badge/MySql-e2e2e2.svg?style=for-the-badge&logo=mysql"/></code>
 <code><img src="https://img.shields.io/badge/laravel-ffc0ca.svg?style=for-the-badge&logo=laravel"/></code>
 <code><img src="https://img.shields.io/badge/sketchup-a8a8a8.svg?style=for-the-badge&logo=sketchup"/></code>
