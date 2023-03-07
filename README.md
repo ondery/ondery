@@ -6,10 +6,19 @@
 
 ### 🏗️ Working on:
 
+<code><img src="https://img.shields.io/badge/python-1e3e59.svg?style=for-the-badge&logo=python"/></code>
+<code><img src="https://img.shields.io/badge/javascript-5d540b.svg?style=for-the-badge&logo=javascript"/></code>
 <code><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/></code>
 <code><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/></code>
 <code><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/></code>
-<code><img src="https://img.shields.io/badge/nextjs-%23E0234E.svg?style=for-the-badge&logo=vercel&logoColor=black"/></code>
+<code><img src="https://img.shields.io/badge/next.js-%23E0234E.svg?style=for-the-badge&logo=vercel&logoColor=black"/></code>
+<code><img src="https://img.shields.io/badge/MySql-e2e2e2.svg?style=for-the-badge&logo=mysql"/></code>
+<code><img src="https://img.shields.io/badge/laravel-ffc0ca.svg?style=for-the-badge&logo=laravel"/></code>
+<code><img src="https://img.shields.io/badge/sketchup-a8a8a8.svg?style=for-the-badge&logo=sketchup"/></code>
+<code><img src="https://img.shields.io/badge/blender-653d11.svg?style=for-the-badge&logo=blender"/></code>
+<code><img src="https://img.shields.io/badge/photoshop-134265.svg?style=for-the-badge&logo=adobephotoshop"/></code>
+<code><img src="https://img.shields.io/badge/illustrator-653d00.svg?style=for-the-badge&logo=adobeillustrator"/></code>
+<code><img src="https://img.shields.io/badge/wordpress-5b5b5b.svg?style=for-the-badge&logo=wordpress"/></code>
 
 ### 📫 Reach me:
 
