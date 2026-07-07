@@ -174,7 +174,7 @@ window.OnderyTranslations.fr = {
     desc: "Conseil juridique, architecture logicielle, intégration IA ou développement full-stack — contactez-moi pour toute collaboration.",
     email: "E-mail",
     linkedin: "LinkedIn",
-    quote: "Beaucoup de personnes m'ont contacté récemment dans le cadre de ma recherche d'emploi. Je suis en réalité une personne ordinaire — mais je prends mon exercice juridique et mon travail d'ingénierie au sérieux. Merci pour votre intérêt et votre gentillesse.",
+    quote: "Je suis en réalité une personne ordinaire — mais je prends mon exercice juridique et mon travail d'ingénierie au sérieux. Merci pour votre intérêt et votre gentillesse.",
     cite: "— Önder Yıldırım",
   },
   footer: {

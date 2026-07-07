@@ -174,7 +174,7 @@ window.OnderyTranslations = {
       desc: "Legal consulting, software architecture, AI integration or full-stack development — reach out for any collaboration.",
       email: "Email",
       linkedin: "LinkedIn",
-      quote: "Many people have reached out recently because of my job search. I'm actually an ordinary person — but I take both my legal practice and engineering work seriously. Thank you for your interest and kindness.",
+      quote: "I'm actually an ordinary person — but I take both my legal practice and engineering work seriously. Thank you for your interest and kindness.",
       cite: "— Önder Yıldırım",
     },
     footer: {
@@ -356,7 +356,7 @@ window.OnderyTranslations = {
       desc: "Hukuk danışmanlığı, yazılım mimarisi, yapay zeka entegrasyonu veya full-stack geliştirme — her türlü iş birliği için iletişime geçin.",
       email: "E-posta",
       linkedin: "LinkedIn",
-      quote: "İş arayışım nedeniyle son zamanlarda birçok kişi benimle iletişime geçti. Aslında sıradan bir insanım — ama hem hukuk pratiğimi hem mühendislik işimi ciddiye alıyorum. İlginiz ve sevginiz için teşekkür ederim.",
+      quote: "Aslında sıradan bir insanım — ama hem hukuk pratiğimi hem mühendislik işimi ciddiye alıyorum. İlginiz ve sevginiz için teşekkür ederim.",
       cite: "— Önder Yıldırım",
     },
     footer: {
