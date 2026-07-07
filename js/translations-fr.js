@@ -103,7 +103,7 @@ window.OnderyTranslations.fr = {
     w4Title: "Ingénieur logiciel",
     w4Company: "Technologie crypto & blockchain",
     w4Desc: "Systèmes de bourse crypto et blockchain. Moteurs de trading, modules de custody et portefeuille, conception d'API et optimisation de bases de données.",
-    w5Year: "2012 — Aujourd'hui",
+    w5Year: "2006 — Aujourd'hui",
     w5Title: "Avocat",
     w5Company: "Cabinet Yıldırım & Yurdaöl",
     w5Desc: "Exercice juridique indépendant parallèlement à la carrière logicielle. Droit commercial, PI, transport-logistique, droit du travail, exécution, droit de la famille et conseil aux entreprises.",
