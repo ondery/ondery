@@ -25,8 +25,24 @@
       }));
     }
 
+    function parseRgba(str) {
+      const match = str.match(/rgba?\(([^)]+)\)/);
+      if (!match) return { r: 212, g: 165, b: 116, a: 0.5 };
+      const parts = match[1].split(",").map((v) => parseFloat(v.trim()));
+      return { r: parts[0], g: parts[1], b: parts[2], a: parts[3] ?? 1 };
+    }
+
+    function getParticleColors() {
+      const style = getComputedStyle(document.documentElement);
+      return {
+        fill: style.getPropertyValue("--particle-color").trim() || "rgba(212, 165, 116, 0.5)",
+        line: parseRgba(style.getPropertyValue("--particle-line").trim() || "rgba(212, 165, 116, 0.12)"),
+      };
+    }
+
     function draw() {
       ctx.clearRect(0, 0, w, h);
+      const colors = getParticleColors();
 
       for (const p of particles) {
         p.x += p.vx;
@@ -47,7 +63,7 @@
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(212, 165, 116, 0.5)";
+        ctx.fillStyle = colors.fill;
         ctx.fill();
       }
 
@@ -57,10 +73,11 @@
           const dy = particles[i].y - particles[j].y;
           const dist = Math.hypot(dx, dy);
           if (dist < CONNECT) {
+            const alpha = colors.line.a * (1 - dist / CONNECT);
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(212, 165, 116, ${0.12 * (1 - dist / CONNECT)})`;
+            ctx.strokeStyle = `rgba(${colors.line.r}, ${colors.line.g}, ${colors.line.b}, ${alpha})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

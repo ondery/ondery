@@ -11,6 +11,16 @@
   <meta property="og:url" content="https://ondery.github.io/ondery/">
   <meta name="theme-color" content="#07080d">
   <title>Önder Yıldırım — Attorney · Software Architect · AI Engineer</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("ondery-theme");
+        document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;450;500;550;600&display=swap" rel="stylesheet">
@@ -37,9 +47,16 @@
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-          <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+        <div class="nav-controls">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
+          <button type="button" class="theme-btn is-dark" aria-label="Toggle color theme" aria-pressed="true" data-label-light="Switch to light mode" data-label-dark="Switch to dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
         </div>
         <button class="nav-toggle" data-i18n-attr="aria-label:nav.toggle" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -49,9 +66,16 @@
   </nav>
 
   <div class="mobile-menu" role="dialog" data-i18n-attr="aria-label:nav.mobileLabel">
-    <div class="lang-switch mobile-lang" role="group" aria-label="Language">
-      <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+    <div class="mobile-controls">
+      <div class="lang-switch mobile-lang" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <button type="button" class="theme-btn is-dark" aria-label="Toggle color theme" aria-pressed="true" data-label-light="Switch to light mode" data-label-dark="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
     <a href="#about" data-i18n="nav.about">About</a>
     <a href="#education" data-i18n="nav.education">Education</a>
@@ -381,6 +405,8 @@
   </footer>
 
   <script src="js/translations.js"></script>
+  <script src="js/translations-fr.js"></script>
+  <script src="js/theme.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>

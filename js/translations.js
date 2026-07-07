@@ -17,6 +17,9 @@ window.OnderyTranslations = {
       contact: "Contact",
       toggle: "Toggle menu",
       mobileLabel: "Mobile menu",
+      themeToggle: "Toggle color theme",
+      themeDark: "Switch to dark mode",
+      themeLight: "Switch to light mode",
     },
     hero: {
       badge: "Istanbul Bar Attorney · Software Architect · Honor Graduate",
@@ -196,6 +199,9 @@ window.OnderyTranslations = {
       contact: "İletişim",
       toggle: "Menüyü aç/kapat",
       mobileLabel: "Mobil menü",
+      themeToggle: "Renk temasını değiştir",
+      themeDark: "Koyu moda geç",
+      themeLight: "Açık moda geç",
     },
     hero: {
       badge: "İstanbul Barosu Avukatı · Yazılım Mimarı · Onur Öğrencisi",

@@ -91,6 +91,19 @@
       btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false");
     });
 
+    document.querySelectorAll(".theme-btn").forEach((btn) => {
+      const labelLight = getNested(t, "nav.themeLight");
+      const labelDark = getNested(t, "nav.themeDark");
+      const labelToggle = getNested(t, "nav.themeToggle");
+      if (labelLight) btn.dataset.labelLight = labelLight;
+      if (labelDark) btn.dataset.labelDark = labelDark;
+      if (labelToggle) btn.setAttribute("aria-label", labelToggle);
+    });
+
+    if (window.OnderyTheme) {
+      window.OnderyTheme.applyTheme(window.OnderyTheme.getTheme());
+    }
+
     renderLegalAreas(lang);
   }
 

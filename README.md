@@ -24,7 +24,9 @@
 
 <br>
 
-[**→ Visit Interactive Portfolio (EN / TR)**](https://ondery.github.io/ondery/)
+[**→ Visit Interactive Portfolio (EN / TR / FR)**](https://ondery.github.io/ondery/)
+
+Supports **English**, **Turkish**, and **French** · **Dark / Light** theme toggle
 
 </div>
 
