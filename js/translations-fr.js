@@ -90,7 +90,7 @@ window.OnderyTranslations.fr = {
     w1Year: "2024 — Aujourd'hui",
     w1Title: "Fondateur & Architecte principal — LawToolsAI",
     w1Company: "Indépendant / Legal Tech",
-    w1Desc: "Construction d'une plateforme juridique IA multi-tenant. Agents LangGraph, serveurs MCP, recherche législative RAG, éditeur ONLYOFFICE, intégration UYAP, pipelines BullMQ et architecture SaaS multi-tenant.",
+    w1Desc: "Construction d'une plateforme juridique IA multi-tenant. Agents LangGraph, serveurs MCP, recherche législative RAG, éditeur UDF, intégration UYAP, pipelines BullMQ et architecture SaaS multi-tenant.",
     w2Year: "2024 — 2025",
     w2Title: "Ingénieur logiciel",
     w2Company: "Crypto & Actifs numériques",
