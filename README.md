@@ -11,7 +11,7 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Instrument+Serif&size=28&duration=3000&pause=1000&color=D4A574&center=true&vCenter=true&width=650&lines=Istanbul+Bar+Attorney;Software+Architect;Honor+Graduate+%40+Istanbul+University;Legal+Tech+%26+AI+Platform+Builder;20%2B+Years+of+Experience" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Instrument+Serif&size=28&duration=3000&pause=1000&color=D4A574&center=true&vCenter=true&width=650&lines=Istanbul+Bar+Attorney;Software+Architect;Honor+Graduate+%40+Istanbul+University+Software;Legal+Tech+%26+AI+Platform+Builder;20%2B+Years+of+Experience" alt="Typing SVG" />
 
 <br><br>
 
@@ -20,7 +20,7 @@
 <br><br>
 
 > **Istanbul, Turkey** — Where law meets code. Licensed attorney at the Istanbul Bar,
-> honor graduate in Computer Engineering, and full-stack architect with 20+ years of experience.
+> honor graduate from Istanbul University Software Department, and full-stack architect with 20+ years of experience.
 
 <br>
 
@@ -36,7 +36,7 @@
 |---|---|---|
 | **Role** | Licensed Attorney · Istanbul Bar | Software Architect · Full-Stack Engineer |
 | **Organization** | Yıldırım & Yurdaöl Law Office | Enterprise Software · LawToolsAI (Founder) |
-| **Education** | LL.B. — Eastern Mediterranean University | B.Sc. Computer Engineering — Istanbul University *(Honors)* |
+| **Education** | LL.B. — Eastern Mediterranean University | Software Department — Istanbul University *(Honors)* |
 | **Focus** | Commercial, IP, Transport, Labor Law | Legal Tech, AI, RAG, Enterprise Systems |
 | **Languages** | Turkish, English, French | TypeScript, Python, Go, Java, PHP |
 
@@ -44,7 +44,7 @@
 
 ## 🎓 Education & Credentials
 
-- **B.Sc. Computer Engineering** — Istanbul University *(Honor Graduate / Onur Öğrencisi)* · 2009–2013
+- **Software Department** — Istanbul University *(Honor Graduate / Onur Öğrencisi)* · 2009–2013
 - **LL.B. Law** — Eastern Mediterranean University, Cyprus · 2000–2004
 - **Istanbul Bar Association** — Licensed Attorney
 - **Ankara Tevfik Fikret High School**
