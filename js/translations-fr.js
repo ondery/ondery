@@ -2,7 +2,7 @@ window.OnderyTranslations = window.OnderyTranslations || {};
 window.OnderyTranslations.fr = {
   meta: {
     title: "Önder Yıldırım — Avocat · Architecte Logiciel · Ingénieur IA",
-    description: "Necmettin Önder Yıldırım — Avocat au Barreau d'Istanbul, diplômé avec mention du département Logiciel de l'Université d'Istanbul, architecte full-stack avec plus de 20 ans d'expérience.",
+    description: "Önder Yıldırım — Avocat au Barreau d'Istanbul, diplômé avec mention du département Logiciel de l'Université d'Istanbul, architecte full-stack avec plus de 20 ans d'expérience.",
     ogTitle: "Önder Yıldırım — Là où le droit rencontre le code",
     ogDescription: "Avocat inscrit au barreau et architecte logiciel. Diplômé avec mention en informatique. Je construis des plateformes juridiques alimentées par l'IA.",
   },
@@ -23,7 +23,7 @@ window.OnderyTranslations.fr = {
   },
   hero: {
     badge: "Avocat · Barreau d'Istanbul · Architecte logiciel · Mention",
-    name: "Necmettin Önder Yıldırım",
+    name: "Önder Yıldırım",
     titleHtml: "Là où le <em>droit</em> rencontre le <em>code.</em>",
     subtitle: "Avocat inscrit au Barreau d'Istanbul et architecte logiciel full-stack avec plus de 20 ans d'expérience. Diplômé avec mention du département Logiciel de l'Université d'Istanbul — je construis des systèmes qui relient la pratique juridique et la technologie.",
     ctaProjects: "Découvrir les projets",
@@ -46,7 +46,7 @@ window.OnderyTranslations.fr = {
     tag: "// à propos",
     titleHtml: "Deux métiers,<br>une vision.",
     desc: "Je ne suis pas seulement un développeur qui connaît le droit — ni un avocat qui s'essaie au code. J'ai construit les deux carrières avec la même profondeur et la même conviction.",
-    p1Html: "Je suis <strong>Necmettin Önder Yıldırım</strong> — avocat inscrit au <strong>Barreau d'Istanbul</strong>, exerçant au cabinet Yıldırım &amp; Yurdaöl. Ma pratique couvre le droit commercial, la propriété intellectuelle, le transport international et la logistique, le droit du travail, l'exécution et la faillite, le droit de la famille et le conseil juridique aux entreprises.",
+    p1Html: "Je suis <strong>Önder Yıldırım</strong> — avocat inscrit au <strong>Barreau d'Istanbul</strong>, exerçant au cabinet Yıldırım &amp; Yurdaöl. Ma pratique couvre le droit commercial, la propriété intellectuelle, le transport international et la logistique, le droit du travail, l'exécution et la faillite, le droit de la famille et le conseil juridique aux entreprises.",
     p2Html: "Parallèlement à ma carrière juridique, j'ai obtenu mon diplôme avec mention au <strong>département Logiciel de l'Université d'Istanbul</strong>. Depuis plus de dix ans, je suis passé d'ingénieur logiciel à architecte logiciel, en concevant des systèmes de cryptomonnaies, des infrastructures blockchain, des plateformes de trading temps réel et des intégrations sécurisées.",
     p3Html: "Aujourd'hui, je réunis ces deux mondes : je développe <strong>LawToolsAI</strong>, une plateforme juridique IA multi-tenant avec pipelines RAG, agents LangGraph et intégration du protocole MCP. Je parle couramment <strong>anglais et français</strong>, et j'apporte une double perspective rare que la plupart des équipes legal-tech peinent à assembler.",
     h1Title: "Avocat inscrit",
@@ -175,7 +175,7 @@ window.OnderyTranslations.fr = {
     email: "E-mail",
     linkedin: "LinkedIn",
     quote: "Beaucoup de personnes m'ont contacté récemment dans le cadre de ma recherche d'emploi. Je suis en réalité une personne ordinaire — mais je prends mon exercice juridique et mon travail d'ingénierie au sérieux. Merci pour votre intérêt et votre gentillesse.",
-    cite: "— Necmettin Önder Yıldırım",
+    cite: "— Önder Yıldırım",
   },
   footer: {
     textHtml: '© 2026 <a href="https://github.com/ondery">Necmettin Önder Yıldırım</a> · Istanbul, Turquie · <a href="https://github.com/ondery/ondery">Code source</a>',

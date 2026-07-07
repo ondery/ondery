@@ -1,8 +1,8 @@
 <div align="center">
 
-# Necmettin Önder Yıldırım
+# Önder Yıldırım
 
-### Attorney · Software Architect · AI Engineer · Honor Graduate
+### Attorney · Software Architect · AI Engineer
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-ondery.github.io%2Fondery-d4a574?style=for-the-badge&logoColor=white)](https://ondery.github.io/ondery/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@onder--yildirim-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/onder-yildirim/)
@@ -15,7 +15,7 @@
 
 <br><br>
 
-<img src="https://avatars.githubusercontent.com/u/7957487?v=4" width="160" style="border-radius:50%; border: 3px solid #d4a574;" alt="Önder Yıldırım" />
+<img src="./mywave2.png" width="650" alt="Önder Yıldırım" />
 
 <br><br>
 
@@ -46,7 +46,7 @@ Supports **English**, **Turkish**, and **French** · **Dark / Light** theme togg
 
 ## 🎓 Education & Credentials
 
-- **Software Department** — Istanbul University *(Honor Graduate / Onur Öğrencisi)* · 2009–2013
+- **Software Department** — Istanbul University *(Honor Graduate)* · 2009–2013
 - **LL.B. Law** — Eastern Mediterranean University, Cyprus · 2000–2004
 - **Istanbul Bar Association** — Licensed Attorney
 - **Ankara Tevfik Fikret High School**
