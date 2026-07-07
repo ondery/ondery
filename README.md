@@ -37,9 +37,9 @@ Supports **English**, **Turkish**, and **French** · **Dark / Light** theme togg
 | | **Law** | **Technology** |
 |---|---|---|
 | **Role** | Licensed Attorney · Istanbul Bar | Software Architect · Full-Stack Engineer |
-| **Organization** | Yıldırım & Yurdaöl Law Office | Enterprise Software · LawToolsAI (Founder) |
+| **Organization** | Yıldırım & Yurdaöl Law Office | Crypto & Blockchain Software · LawToolsAI (Founder) |
 | **Education** | LL.B. — Eastern Mediterranean University | Software Department — Istanbul University *(Honors)* |
-| **Focus** | Commercial, IP, Transport, Labor Law | Legal Tech, AI, RAG, Enterprise Systems |
+| **Focus** | Commercial, IP, Transport, Labor Law | Legal Tech, AI, RAG, Crypto & Blockchain Systems |
 | **Languages** | Turkish, English, French | TypeScript, Python, Go, Java, PHP |
 
 ---
