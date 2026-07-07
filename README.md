@@ -1,47 +1,132 @@
-<p align="center"><img width="100%" src="./mywave2.png" /></p>
+<div align="center">
 
-### Hi there, I am Öndery👋
+# Öndery
 
-> A Frontend, backend developer, database specialist and a graphic designer from **İstanbul, Turkey**.
+### Full-Stack Architecture · AI · Database · Design
 
-### 🏗️ Working with:
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-ondery.github.io%2Fondery-d4a574?style=for-the-badge&logoColor=white)](https://ondery.github.io/ondery/)
+[![Email](https://img.shields.io/badge/Email-onery777@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ondery777@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-@ondery-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ondery)
 
-<code><img src="https://img.shields.io/badge/.net-black.svg?style=for-the-badge&logo=.net"/></code>
-<code><img src="https://img.shields.io/badge/python-1e3e59.svg?style=for-the-badge&logo=python"/></code>
-<code><img src="https://img.shields.io/badge/javascript-5d540b.svg?style=for-the-badge&logo=javascript"/></code>
-<code><img src="https://img.shields.io/badge/Solidity-c8cacc.svg?style=for-the-badge&logo=Solidity"/></code>
-<code><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/></code>
-<code><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/></code>
-<code><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/></code>
-<code><img src="https://img.shields.io/badge/next.js-black.svg?style=for-the-badge&logo=vercel"/></code>
-<code><img src="https://img.shields.io/badge/mssql-blue.svg?style=for-the-badge&logo=MicrosoftSQLServer"/></code>
-<code><img src="https://img.shields.io/badge/MySql-e2e2e2.svg?style=for-the-badge&logo=mysql"/></code>
-<code><img src="https://img.shields.io/badge/PostgreSQL-c4d6e3.svg?style=for-the-badge&logo=PostgreSQL"/></code>
-<code><img src="https://img.shields.io/badge/SQLite-a3caff.svg?style=for-the-badge&logo=SQLite"/></code>
-<code><img src="https://img.shields.io/badge/laravel-ffc0ca.svg?style=for-the-badge&logo=laravel"/></code>
-<code><img src="https://img.shields.io/badge/wordpress-5b5b5b.svg?style=for-the-badge&logo=wordpress"/></code>
-<code><img src="https://img.shields.io/badge/sketchup-a8a8a8.svg?style=for-the-badge&logo=sketchup"/></code>
-<code><img src="https://img.shields.io/badge/blender-653d11.svg?style=for-the-badge&logo=blender"/></code>
-<code><img src="https://img.shields.io/badge/photoshop-134265.svg?style=for-the-badge&logo=adobephotoshop"/></code>
-<code><img src="https://img.shields.io/badge/illustrator-653d00.svg?style=for-the-badge&logo=adobeillustrator"/></code>
-<code><img src="https://img.shields.io/badge/adobeXD-ffcafc.svg?style=for-the-badge&logo=adobexd"/></code>
-<code><img src="https://img.shields.io/badge/PhpStorm-c582ee.svg?style=for-the-badge&logo=PhpStorm"/></code>
-<code><img src="https://img.shields.io/badge/Visual%20Studio%20Code-717171.svg?style=for-the-badge&logo=VisualStudioCode"/></code>
-<code><img src="https://img.shields.io/badge/Prettier-ffeec9.svg?style=for-the-badge&logo=Prettier"/></code>
+<br>
 
+<img src="https://readme-typing-svg.demolab.com?font=Instrument+Serif&size=28&duration=3000&pause=1000&color=D4A574&center=true&vCenter=true&width=600&lines=20%2B+years+of+experience;Full-Stack+Architecture+%26+System+Design;AI+%26+RAG+Pipeline+Development;Database+Optimization;UI%2FUX+%26+Graphic+Design" alt="Typing SVG" />
 
-### 📫 Reach me:
+<br><br>
 
-- **WeChat** : onderyyy
-- **E-mail** : ondery777@gmail.com
+<img src="https://avatars.githubusercontent.com/u/7957487?v=4" width="160" style="border-radius:50%; border: 3px solid #d4a574;" alt="Öndery" />
 
-> It's been a bit of a hassle since many people have added me recently due to my job search. Actually, I am an ordinary person. Thank you for your love. ❤️
+<br><br>
 
-### 📊 Stats:
+> **Istanbul, Turkey** — More than writing code: I design systems, optimize databases,
+> build AI integrations, and craft user experiences.
 
-| <img align="center" src="https://github-readme-stats.vercel.app/api?username=ondery&show_icons=true&theme=buefy&hide_border=true" alt="" /> | <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ondery&layout=compact&theme=buefy&hide_border=true" alt="" /> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+<br>
 
-### 📈 Activity Graph:
+[**→ Visit Interactive Portfolio (EN / TR)**](https://ondery.github.io/ondery/)
 
-![](https://activity-graph.herokuapp.com/graph?username=ondery&theme=react-dark)
+</div>
+
+---
+
+## 🏗️ Tech Stack
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" /><br><sub>TypeScript</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" /><br><sub>React</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" /><br><sub>Next.js</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" /><br><sub>Node.js</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" /><br><sub>Python</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=go" width="48" height="48" alt="Go" /><br><sub>Go</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=php" width="48" height="48" alt="PHP" /><br><sub>PHP</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=mysql" width="48" height="48" alt="MySQL" /><br><sub>MySQL</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" /><br><sub>PostgreSQL</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" /><br><sub>MongoDB</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=redis" width="48" height="48" alt="Redis" /><br><sub>Redis</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" /><br><sub>Docker</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=linux" width="48" height="48" alt="Linux" /><br><sub>Linux</sub>
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" /><br><sub>Git</sub>
+</td>
+</tr>
+</table>
+
+<br>
+
+## 🚀 Featured Projects
+
+| Project | Description | Stack |
+|---------|-------------|-------|
+| ⚖️ **LawToolsAI** | Multi-tenant legal AI platform | Next.js, LangGraph, MCP, Prisma |
+| 🔍 **[RAGFlow](https://github.com/ondery/ragflow)** | Open-source RAG engine development | Go, Python, RAG |
+| 📄 **[ONLYOFFICE](https://github.com/ondery/DocumentServer)** | Document server integration | JavaScript, Node.js |
+| 📝 **[Outliner](https://github.com/ondery/outliner)** | Hierarchical note-taking tool | TypeScript |
+| ⚽ **[World Cup 2026](https://github.com/ondery/world-cup-2026)** | Interactive tournament experience | HTML, CSS, JS |
+
+<br>
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=ondery&show_icons=true&theme=react&hide_border=true&bg_color=0d1117&title_color=d4a574&icon_color=d4a574&text_color=c9d1d9" alt="GitHub Stats" />
+&nbsp;
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ondery&layout=compact&theme=react&hide_border=true&bg_color=0d1117&title_color=d4a574&text_color=c9d1d9" alt="Top Languages" />
+
+<br><br>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ondery&theme=react-dark&hide_border=true&bg_color=0d1117&color=d4a574&line=d4a574&point=c9d1d9" alt="Activity Graph" />
+
+</div>
+
+<br>
+
+## 📫 Contact
+
+<div align="center">
+
+| | |
+|---|---|
+| ✉️ **Email** | [ondery777@gmail.com](mailto:ondery777@gmail.com) |
+| 💬 **WeChat** | `onderyyy` |
+| 🐙 **GitHub** | [@ondery](https://github.com/ondery) |
+| 📍 **Location** | Istanbul, Turkey |
+
+</div>
+
+<br>
+
+<div align="center">
+
+<sub>🌐 Portfolio available in <strong>English</strong> and <strong>Turkish</strong> — switch via EN / TR toggle on the site.</sub>
+
+</div>
