@@ -31,8 +31,8 @@ window.OnderyTranslations.fr = {
     ctaLinkedin: "Profil LinkedIn",
     avatarAlt: "Photo de profil d'Önder Yıldırım",
     statYears: "Ans en logiciel",
-    statBar: "Barreau d'Istanbul",
-    statHonor: "Mention",
+    statProjects: "Projets",
+    statTech: "Technologies",
   },
   roles: [
     "Avocat inscrit · Barreau d'Istanbul",

@@ -439,11 +439,18 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   animation: fadeUp 1s var(--ease-out) 0.6s forwards;
 }
 
+.avatar-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .avatar-frame {
   position: relative;
   width: 320px;
   height: 320px;
-  margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .avatar-ring {
@@ -476,28 +483,26 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 
 .avatar-stats {
-  position: absolute;
-  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   z-index: 2;
-  pointer-events: none;
 }
 
 .stat-card {
-  position: absolute;
   background: var(--bg-glass);
   backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 12px 18px;
   text-align: center;
+  min-width: 108px;
   animation: floatCard 6s ease-in-out infinite;
-  pointer-events: auto;
-  min-width: 88px;
 }
 
-.stat-card:nth-child(1) { top: 20px; right: -30px; animation-delay: 0s; }
-.stat-card:nth-child(2) { bottom: 40px; left: -40px; animation-delay: -2s; }
-.stat-card:nth-child(3) { bottom: -10px; right: 20px; animation-delay: -4s; }
+.stat-card:nth-child(1) { animation-delay: 0s; }
+.stat-card:nth-child(2) { animation-delay: -2s; }
+.stat-card:nth-child(3) { animation-delay: -4s; }
 
 @keyframes floatCard {
   0%, 100% { transform: translateY(0); }
@@ -508,12 +513,6 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   font-family: var(--font-display);
   font-size: 1.75rem;
   color: var(--accent);
-  line-height: 1;
-}
-
-.stat-symbol {
-  font-family: inherit;
-  font-size: 1.75rem;
   line-height: 1;
 }
 
@@ -1342,7 +1341,10 @@ section {
   .hero-subtitle { margin-inline: auto; }
   .hero-actions { justify-content: center; }
   .hero-visual { order: -1; }
+  .avatar-wrap { flex-direction: column; gap: 16px; }
   .avatar-frame { width: 240px; height: 240px; }
+  .avatar-stats { width: 100%; max-width: 240px; }
+  .stat-card { width: 100%; }
   .about-grid { grid-template-columns: 1fr; }
   .about-highlights-6 { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: 1fr; }

@@ -31,8 +31,8 @@ window.OnderyTranslations = {
       ctaLinkedin: "LinkedIn Profile",
       avatarAlt: "Önder Yıldırım profile photo",
       statYears: "Years in Software",
-      statBar: "Istanbul Bar",
-      statHonor: "Honor Graduate",
+      statProjects: "Projects",
+      statTech: "Technologies",
     },
     roles: [
       "Licensed Attorney · Istanbul Bar",
@@ -213,8 +213,8 @@ window.OnderyTranslations = {
       ctaLinkedin: "LinkedIn Profili",
       avatarAlt: "Önder Yıldırım profil fotoğrafı",
       statYears: "Yıl Yazılım",
-      statBar: "İstanbul Barosu",
-      statHonor: "Onur Öğrencisi",
+      statProjects: "Proje",
+      statTech: "Teknoloji",
     },
     roles: [
       "Baro Kayıtlı Avukat · İstanbul Barosu",
