@@ -1,99 +1,54 @@
 (function () {
   "use strict";
 
-  /* ── Particle Network ── */
-  const canvas = document.getElementById("particle-canvas");
-  if (canvas) {
-    const ctx = canvas.getContext("2d");
-    let w, h, particles, mouse = { x: null, y: null };
-    const COUNT = 80;
-    const CONNECT = 140;
-    const MOUSE_RADIUS = 180;
+  /* ── Sidebar mobile toggle ── */
+  const sidebar = document.querySelector(".sidebar");
+  const overlay = document.querySelector(".sidebar-overlay");
+  const menuToggle = document.querySelector(".menu-toggle");
 
-    function resize() {
-      w = canvas.width = window.innerWidth;
-      h = canvas.height = window.innerHeight;
-    }
-
-    function initParticles() {
-      particles = Array.from({ length: COUNT }, () => ({
-        x: Math.random() * w,
-        y: Math.random() * h,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
-        r: Math.random() * 1.5 + 0.5,
-      }));
-    }
-
-    function parseRgba(str) {
-      const match = str.match(/rgba?\(([^)]+)\)/);
-      if (!match) return { r: 212, g: 165, b: 116, a: 0.5 };
-      const parts = match[1].split(",").map((v) => parseFloat(v.trim()));
-      return { r: parts[0], g: parts[1], b: parts[2], a: parts[3] ?? 1 };
-    }
-
-    function getParticleColors() {
-      const style = getComputedStyle(document.documentElement);
-      return {
-        fill: style.getPropertyValue("--particle-color").trim() || "rgba(212, 165, 116, 0.5)",
-        line: parseRgba(style.getPropertyValue("--particle-line").trim() || "rgba(212, 165, 116, 0.12)"),
-      };
-    }
-
-    function draw() {
-      ctx.clearRect(0, 0, w, h);
-      const colors = getParticleColors();
-
-      for (const p of particles) {
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0 || p.x > w) p.vx *= -1;
-        if (p.y < 0 || p.y > h) p.vy *= -1;
-
-        if (mouse.x !== null) {
-          const dx = mouse.x - p.x;
-          const dy = mouse.y - p.y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < MOUSE_RADIUS) {
-            const force = (MOUSE_RADIUS - dist) / MOUSE_RADIUS * 0.015;
-            p.vx -= dx * force;
-            p.vy -= dy * force;
-          }
-        }
-
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = colors.fill;
-        ctx.fill();
-      }
-
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < CONNECT) {
-            const alpha = colors.line.a * (1 - dist / CONNECT);
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(${colors.line.r}, ${colors.line.g}, ${colors.line.b}, ${alpha})`;
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
-          }
-        }
-      }
-
-      requestAnimationFrame(draw);
-    }
-
-    window.addEventListener("resize", () => { resize(); initParticles(); });
-    window.addEventListener("mousemove", (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
-    window.addEventListener("mouseleave", () => { mouse.x = null; mouse.y = null; });
-    resize();
-    initParticles();
-    draw();
+  function setMenuOpen(open) {
+    document.body.classList.toggle("menu-open", open);
+    sidebar?.classList.toggle("open", open);
+    overlay?.classList.toggle("open", open);
+    menuToggle?.setAttribute("aria-expanded", open ? "true" : "false");
+    document.body.style.overflow = open ? "hidden" : "";
   }
+
+  function closeMenu() { setMenuOpen(false); }
+  function openMenu() { setMenuOpen(true); }
+
+  menuToggle?.addEventListener("click", () => {
+    sidebar?.classList.contains("open") ? closeMenu() : openMenu();
+  });
+
+  overlay?.addEventListener("click", closeMenu);
+
+  sidebar?.querySelectorAll(".sidebar-nav a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) closeMenu();
+  });
+
+  /* ── Scroll spy — active sidebar link ── */
+  const sections = document.querySelectorAll(".doc-section[id], .hero[id]");
+  const navLinks = document.querySelectorAll(".sidebar-nav a");
+
+  const spyObs = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+        });
+      });
+    },
+    { rootMargin: "-20% 0px -65% 0px", threshold: 0 }
+  );
+
+  sections.forEach((s) => spyObs.observe(s));
 
   /* ── Typed Roles (i18n-aware) ── */
   const typedEl = document.getElementById("typed-text");
@@ -154,26 +109,6 @@
     });
   });
 
-  /* ── Nav scroll ── */
-  const nav = document.querySelector(".nav");
-  window.addEventListener("scroll", () => {
-    nav?.classList.toggle("scrolled", window.scrollY > 40);
-  });
-
-  /* ── Mobile menu ── */
-  const toggle = document.querySelector(".nav-toggle");
-  const mobileMenu = document.querySelector(".mobile-menu");
-  toggle?.addEventListener("click", () => {
-    mobileMenu?.classList.toggle("open");
-    document.body.style.overflow = mobileMenu?.classList.contains("open") ? "hidden" : "";
-  });
-  mobileMenu?.querySelectorAll("a").forEach((a) => {
-    a.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-      document.body.style.overflow = "";
-    });
-  });
-
   /* ── Scroll reveal ── */
   const revealEls = document.querySelectorAll(".reveal");
   const revealObs = new IntersectionObserver(
@@ -185,7 +120,7 @@
         }
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -30px 0px" }
   );
   revealEls.forEach((el) => revealObs.observe(el));
 
@@ -246,7 +181,7 @@
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         terminalLines.forEach((line, i) => {
-          setTimeout(() => line.classList.add("show"), i * 350);
+          setTimeout(() => line.classList.add("show"), i * 300);
         });
         termObs.unobserve(entry.target);
       });
@@ -256,7 +191,7 @@
   const terminal = document.querySelector(".terminal");
   if (terminal) termObs.observe(terminal);
 
-  /* ── Smooth anchor offset for fixed nav ── */
+  /* ── Smooth anchor scroll ── */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
       const id = anchor.getAttribute("href");
@@ -264,9 +199,7 @@
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      const offset = 72;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: "smooth" });
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 })();

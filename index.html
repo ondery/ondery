@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Önder Yıldırım — Istanbul Bar attorney, honor graduate in Computer Science, full-stack architect with 20+ years of experience.">
+  <meta name="description" content="Önder Yıldırım — Istanbul Bar attorney, full-stack architect with 20+ years of experience. Legal tech, AI & enterprise systems.">
   <meta name="author" content="Önder Yıldırım">
   <meta property="og:title" content="Önder Yıldırım — Where Law Meets Code">
-  <meta property="og:description" content="Licensed attorney and software architect. Honor graduate in Computer Science.">
+  <meta property="og:description" content="Licensed attorney and software architect. Building AI-powered legal platforms.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ondery.github.io/ondery/">
-  <meta name="theme-color" content="#07080d">
+  <meta name="theme-color" content="#080b12">
   <title>Önder Yıldırım — Attorney · Software Architect · AI Engineer</title>
   <script>
     (function () {
@@ -30,381 +30,418 @@
 <body>
 
   <div class="grain" aria-hidden="true"></div>
-  <canvas id="particle-canvas" aria-hidden="true"></canvas>
   <div class="gradient-orb orb-1" aria-hidden="true"></div>
   <div class="gradient-orb orb-2" aria-hidden="true"></div>
 
-  <nav class="nav" role="navigation" data-i18n-attr="aria-label:nav.label">
-    <div class="container nav-inner">
-      <a href="#" class="logo">Ön<span>dery</span></a>
-      <ul class="nav-links">
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#education" data-i18n="nav.education">Education</a></li>
-        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
-        <li><a href="#legal" data-i18n="nav.legal">Legal</a></li>
-        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <div class="nav-controls">
-          <div class="lang-switch" role="group" aria-label="Language">
-            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-            <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
-            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
-          </div>
-          <button type="button" class="theme-btn is-dark" aria-label="Toggle color theme" aria-pressed="true" data-label-light="Switch to light mode" data-label-dark="Switch to dark mode">
-            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-        </div>
-        <button class="nav-toggle" data-i18n-attr="aria-label:nav.toggle" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <div class="mobile-menu" role="dialog" data-i18n-attr="aria-label:nav.mobileLabel">
-    <div class="mobile-controls">
-      <div class="lang-switch mobile-lang" role="group" aria-label="Language">
+  <aside class="sidebar" aria-label="Site navigation">
+    <a href="#" class="sidebar-logo">Ön<span>dery</span></a>
+    <p class="sidebar-label" data-i18n="sidebar.label">Navigate</p>
+    <ul class="sidebar-nav">
+      <li><a href="#collaborate" data-i18n="nav.collaborate">Collaborate</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#dual-career" data-i18n="nav.dualCareer">Dual Career</a></li>
+      <li><a href="#education" data-i18n="nav.education">Education</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#legal" data-i18n="nav.legal">Legal</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <div class="lang-switch" role="group" aria-label="Language">
         <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
         <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
       </div>
-      <button type="button" class="theme-btn is-dark" aria-label="Toggle color theme" aria-pressed="true" data-label-light="Switch to light mode" data-label-dark="Switch to dark mode">
+      <button type="button" class="theme-btn is-dark sidebar-theme" aria-label="Toggle color theme" data-label-light="Switch to light mode" data-label-dark="Switch to dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
+      <a href="https://github.com/ondery" class="sidebar-github" target="_blank" rel="noopener noreferrer">GitHub @ondery</a>
     </div>
-    <a href="#about" data-i18n="nav.about">About</a>
-    <a href="#education" data-i18n="nav.education">Education</a>
-    <a href="#experience" data-i18n="nav.experience">Experience</a>
-    <a href="#legal" data-i18n="nav.legal">Legal</a>
-    <a href="#skills" data-i18n="nav.skills">Skills</a>
-    <a href="#projects" data-i18n="nav.projects">Projects</a>
-    <a href="#contact" data-i18n="nav.contact">Contact</a>
-  </div>
+  </aside>
 
-  <header class="hero" id="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          <span data-i18n="hero.badge">Istanbul Bar Attorney · Software Architect · Honor Graduate</span>
+  <div class="sidebar-overlay" aria-hidden="true"></div>
+
+  <div class="site-main">
+    <header class="mobile-bar">
+      <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="mobile-logo">Öndery</a>
+      <button type="button" class="theme-btn is-dark mobile-theme" aria-label="Toggle color theme" data-label-light="Switch to light mode" data-label-dark="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </header>
+
+    <header class="hero" id="hero">
+      <div class="hero-banner hero-banner-avatar">
+        <img src="https://avatars.githubusercontent.com/u/7957487?v=4" alt="Önder Yıldırım" width="320" height="320" loading="eager" data-i18n-attr="alt:hero.bannerAlt">
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-meta">
+          <span class="meta-badge meta-live"><span class="dot"></span> <span data-i18n="hero.badgeLive">Available for collaboration</span></span>
+          <span class="meta-badge" data-i18n="hero.badgeLocation">Istanbul, Turkey</span>
+          <span class="meta-badge" data-i18n="hero.badgeLangs">EN · TR · FR</span>
         </div>
-        <p class="hero-name" data-i18n="hero.name">Önder Yıldırım</p>
-        <h1 class="hero-title" data-i18n-html="hero.titleHtml">Where <em>law</em> meets <em>code.</em></h1>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">Licensed attorney and full-stack software architect with 20+ years of experience.</p>
+        <p class="hero-role" data-i18n="hero.badge">Attorney · Software Architect · AI Engineer</p>
+        <h1 class="hero-name" data-i18n="hero.name">Önder Yıldırım</h1>
+        <p class="hero-title" data-i18n-html="hero.titleHtml">Where <em>law</em> meets <em>code.</em></p>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Licensed attorney and full-stack software architect with 20+ years of experience building systems at the intersection of legal practice and technology.</p>
         <div class="hero-typed">
           <span id="typed-text"></span><span class="cursor" aria-hidden="true"></span>
         </div>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             <span data-i18n="hero.ctaProjects">Explore Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="https://www.linkedin.com/in/onder-yildirim/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span data-i18n="hero.ctaLinkedin">LinkedIn Profile</span>
-          </a>
-          <a href="#contact" class="btn btn-ghost">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span data-i18n="hero.ctaContact">Get in Touch</span>
-          </a>
+          <a href="https://www.linkedin.com/in/onder-yildirim/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaLinkedin">LinkedIn</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">Contact</a>
+        </div>
+        <div class="kpi-row">
+          <div class="kpi-card reveal">
+            <div class="kpi-value" data-count="20" data-suffix="+">0</div>
+            <div class="kpi-label" data-i18n="hero.statYears">Years in Software</div>
+          </div>
+          <div class="kpi-card reveal">
+            <div class="kpi-value" data-count="100" data-suffix="+">0</div>
+            <div class="kpi-label" data-i18n="hero.statProjects">Projects</div>
+          </div>
+          <div class="kpi-card reveal">
+            <div class="kpi-value" data-count="15" data-suffix="+">0</div>
+            <div class="kpi-label" data-i18n="hero.statTech">Technologies</div>
+          </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="avatar-wrap">
-          <div class="avatar-frame">
-            <div class="avatar-ring" aria-hidden="true"></div>
-            <img class="avatar-img" src="https://avatars.githubusercontent.com/u/7957487?v=4" alt="Önder Yıldırım" width="320" height="320" loading="eager" data-i18n-attr="alt:hero.avatarAlt">
+    </header>
+
+    <section id="collaborate" class="doc-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="collaborate.tag">// when to collaborate</span>
+          <h2 class="section-title" data-i18n="collaborate.title">Where my dual expertise adds value.</h2>
+          <p class="section-desc" data-i18n="collaborate.desc">Engage when the problem sits at the intersection of law, software architecture, and operational complexity — not when you need a generic developer or a traditional attorney alone.</p>
+        </div>
+        <ul class="collab-list reveal">
+          <li data-i18n="collaborate.i1">Building legal-tech platforms, AI agents, RAG pipelines, or document automation systems.</li>
+          <li data-i18n="collaborate.i2">Architecting enterprise software with compliance, data governance, and regulatory constraints.</li>
+          <li data-i18n="collaborate.i3">Transport, logistics, and commercial disputes requiring both legal and technical depth.</li>
+          <li data-i18n="collaborate.i4">Crypto, blockchain, and high-integrity systems where architecture and accountability matter.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="doc-section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="about.tag">// role & context</span>
+          <h2 class="section-title" data-i18n-html="about.titleHtml">Two professions,<br>one vision.</h2>
+          <p class="section-desc" data-i18n="about.desc">I'm not just a developer who happens to know law — nor a lawyer who dabbles in code.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p data-i18n-html="about.p1Html"></p>
+            <p data-i18n-html="about.p2Html"></p>
+            <p data-i18n-html="about.p3Html"></p>
           </div>
-          <div class="avatar-stats">
-            <div class="stat-card">
-              <div class="stat-number" data-count="20" data-suffix="+">0</div>
-              <div class="stat-label" data-i18n="hero.statYears">Years in Software</div>
+          <div class="about-highlights">
+            <div class="highlight-card reveal"><div class="highlight-icon">⚖️</div><div><h4 data-i18n="about.h1Title">Licensed Attorney</h4><p data-i18n="about.h1Desc"></p></div></div>
+            <div class="highlight-card reveal"><div class="highlight-icon">🏗️</div><div><h4 data-i18n="about.h2Title">Software Architect</h4><p data-i18n="about.h2Desc"></p></div></div>
+            <div class="highlight-card reveal"><div class="highlight-icon">🧠</div><div><h4 data-i18n="about.h3Title">Legal Tech Pioneer</h4><p data-i18n="about.h3Desc"></p></div></div>
+            <div class="highlight-card reveal"><div class="highlight-icon">🎓</div><div><h4 data-i18n="about.h4Title">Honor Graduate · Designer</h4><p data-i18n="about.h4Desc"></p></div></div>
+            <div class="highlight-card reveal"><div class="highlight-icon">🗄️</div><div><h4 data-i18n="about.h5Title">Database Specialist</h4><p data-i18n="about.h5Desc"></p></div></div>
+            <div class="highlight-card reveal"><div class="highlight-icon">🌍</div><div><h4 data-i18n="about.h6Title">Multilingual</h4><p data-i18n="about.h6Desc"></p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dual-career" class="doc-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="dualCareer.tag">// dual career</span>
+          <h2 class="section-title" data-i18n="dualCareer.title">Law + Technology</h2>
+          <p class="section-desc" data-i18n="dualCareer.desc">Two parallel careers, each with equal depth — structured for clarity.</p>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="dual-table">
+            <thead>
+              <tr>
+                <th data-i18n="dualCareer.colAspect">Aspect</th>
+                <th data-i18n="dualCareer.colLaw">Law</th>
+                <th data-i18n="dualCareer.colTech">Technology</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="dualCareer.rowRole">Role</td>
+                <td data-i18n="dualCareer.lawRole">Licensed Attorney · Istanbul Bar</td>
+                <td data-i18n="dualCareer.techRole">Software Architect · Full-Stack Engineer</td>
+              </tr>
+              <tr>
+                <td data-i18n="dualCareer.rowOrg">Organization</td>
+                <td data-i18n="dualCareer.lawOrg">Yıldırım & Yurdaöl Law Office</td>
+                <td data-i18n="dualCareer.techOrg">LawToolsAI (Founder) · Crypto & Blockchain</td>
+              </tr>
+              <tr>
+                <td data-i18n="dualCareer.rowEdu">Education</td>
+                <td data-i18n="dualCareer.lawEdu">LL.B. — Eastern Mediterranean University</td>
+                <td data-i18n="dualCareer.techEdu">Software Dept. — Istanbul University (Honor Graduate)</td>
+              </tr>
+              <tr>
+                <td data-i18n="dualCareer.rowFocus">Focus</td>
+                <td data-i18n="dualCareer.lawFocus">Commercial, IP, Transport, Labor Law</td>
+                <td data-i18n="dualCareer.techFocus">Legal Tech, AI, RAG, Crypto & Blockchain</td>
+              </tr>
+              <tr>
+                <td data-i18n="dualCareer.rowLangs">Languages</td>
+                <td data-i18n="dualCareer.lawLangs">Turkish, English, French</td>
+                <td data-i18n="dualCareer.techLangs">TypeScript, Python, Go, Java, PHP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="doc-section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="education.tag">// education & credentials</span>
+          <h2 class="section-title" data-i18n="education.title">Built on solid foundations.</h2>
+          <p class="section-desc" data-i18n="education.desc"></p>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <div class="edu-icon">💻</div>
+            <div class="edu-period" data-i18n="education.e1Period">2023 — 2025</div>
+            <h3 data-i18n="education.e1Degree">Associate Degree — Software Department</h3>
+            <p class="edu-school" data-i18n="education.e1School">Istanbul University</p>
+            <p class="edu-note" data-i18n="education.e1Note"></p>
+            <span class="edu-badge">🎓 Honor Graduate</span>
+          </article>
+          <article class="edu-card reveal">
+            <div class="edu-icon">⚖️</div>
+            <div class="edu-period" data-i18n="education.e2Period">2000 — 2004</div>
+            <h3 data-i18n="education.e2Degree">LL.B. Law</h3>
+            <p class="edu-school" data-i18n="education.e2School">Eastern Mediterranean University, Cyprus</p>
+            <p class="edu-note" data-i18n="education.e2Note"></p>
+          </article>
+          <article class="edu-card reveal">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-period" data-i18n="education.e3Period">Graduate</div>
+            <h3 data-i18n="education.e3Degree">High School Diploma</h3>
+            <p class="edu-school" data-i18n="education.e3School">Ankara Tevfik Fikret High School</p>
+            <p class="edu-note" data-i18n="education.e3Note"></p>
+          </article>
+        </div>
+        <div class="cred-row reveal">
+          <div class="cred-card"><span class="cred-icon">⚖️</span><div><h4 data-i18n="education.c1Title">Istanbul Bar Association</h4><p data-i18n="education.c1Desc"></p></div></div>
+          <div class="cred-card"><span class="cred-icon">🏅</span><div><h4 data-i18n="education.c2Title">Honor Graduate</h4><p data-i18n="education.c2Desc"></p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="doc-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="experience.tag">// professional experience</span>
+          <h2 class="section-title" data-i18n="experience.title">A career across two worlds.</h2>
+          <p class="section-desc" data-i18n="experience.desc"></p>
+        </div>
+        <div class="work-list">
+          <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w1Year">2024 — Present</span><span class="work-company" data-i18n="experience.w1Company">Independent / Legal Tech</span></div><h3 data-i18n="experience.w1Title">Founder & Lead Architect — LawToolsAI</h3><p data-i18n="experience.w1Desc"></p><div class="timeline-tags"><span class="tag">Next.js</span><span class="tag">LangGraph</span><span class="tag">RAG</span><span class="tag">MCP</span></div></article>
+          <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w2Year">2024 — 2025</span><span class="work-company" data-i18n="experience.w2Company">Crypto & Digital Assets</span></div><h3 data-i18n="experience.w2Title">Software Engineer</h3><p data-i18n="experience.w2Desc"></p><div class="timeline-tags"><span class="tag">Crypto</span><span class="tag">Blockchain</span></div></article>
+          <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w3Year">2021 — 2024</span><span class="work-company" data-i18n="experience.w3Company">Crypto & Blockchain Technology</span></div><h3 data-i18n="experience.w3Title">Architect Software Engineer</h3><p data-i18n="experience.w3Desc"></p><div class="timeline-tags"><span class="tag">Architecture</span><span class="tag">Microservices</span></div></article>
+          <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w4Year">2014 — 2021</span><span class="work-company" data-i18n="experience.w4Company">Crypto & Blockchain Technology</span></div><h3 data-i18n="experience.w4Title">Software Engineer</h3><p data-i18n="experience.w4Desc"></p><div class="timeline-tags"><span class="tag">API Design</span><span class="tag">MySQL</span></div></article>
+          <article class="work-card work-legal reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w5Year">2006 — Present</span><span class="work-company" data-i18n="experience.w5Company">Yıldırım & Yurdaöl Law Office</span></div><h3 data-i18n="experience.w5Title">Attorney at Law</h3><p data-i18n="experience.w5Desc"></p><div class="timeline-tags"><span class="tag">Commercial Law</span><span class="tag">IP</span><span class="tag">Transport</span></div></article>
+          <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w6Year">2006 — 2014</span><span class="work-company" data-i18n="experience.w6Company">Independent</span></div><h3 data-i18n="experience.w6Title">Freelance Developer & Designer</h3><p data-i18n="experience.w6Desc"></p><div class="timeline-tags"><span class="tag">PHP</span><span class="tag">Design</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="legal" class="doc-section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="legal.tag">// legal practice</span>
+          <h2 class="section-title" data-i18n="legal.title">Practice areas & expertise.</h2>
+          <p class="section-desc" data-i18n="legal.desc"></p>
+        </div>
+        <div class="legal-grid" id="legal-areas"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="doc-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="skills.tag">// core capabilities</span>
+          <h2 class="section-title" data-i18n-html="skills.titleHtml">Wide toolkit,<br>deeper expertise.</h2>
+        </div>
+        <div class="skills-bento">
+          <div class="skill-card large reveal">
+            <div class="skill-icon">⚛️</div>
+            <h3 data-i18n="skills.frontend">Frontend & UI</h3>
+            <div class="skill-list">
+              <span class="skill-pill">React</span><span class="skill-pill">Next.js</span><span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">Tailwind CSS</span><span class="skill-pill">Vue.js</span><span class="skill-pill">Figma</span>
             </div>
-            <div class="stat-card">
-              <div class="stat-number" data-count="100" data-suffix="+">0</div>
-              <div class="stat-label" data-i18n="hero.statProjects">Projects</div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🔧</div>
+            <h3 data-i18n="skills.backend">Backend</h3>
+            <div class="skill-list">
+              <span class="skill-pill">Node.js</span><span class="skill-pill">Python</span><span class="skill-pill">Go</span>
+              <span class="skill-pill">Java</span><span class="skill-pill">REST / GraphQL</span>
             </div>
-            <div class="stat-card">
-              <div class="stat-number" data-count="15" data-suffix="+">0</div>
-              <div class="stat-label" data-i18n="hero.statTech">Technologies</div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">⚖️</div>
+            <h3 data-i18n="skills.legalTech">Legal Tech</h3>
+            <div class="skill-list">
+              <span class="skill-pill">UYAP</span><span class="skill-pill">Legal AI</span><span class="skill-pill">ONLYOFFICE</span>
+              <span class="skill-pill">Compliance</span>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag" data-i18n="about.tag">// about</span>
-        <h2 class="section-title" data-i18n-html="about.titleHtml">Two professions,<br>one vision.</h2>
-        <p class="section-desc" data-i18n="about.desc">I'm not just a developer who happens to know law — nor a lawyer who dabbles in code.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p data-i18n-html="about.p1Html"></p>
-          <p data-i18n-html="about.p2Html"></p>
-          <p data-i18n-html="about.p3Html"></p>
-        </div>
-        <div class="about-highlights about-highlights-6">
-          <div class="highlight-card reveal"><div class="highlight-icon">⚖️</div><div><h4 data-i18n="about.h1Title">Licensed Attorney</h4><p data-i18n="about.h1Desc"></p></div></div>
-          <div class="highlight-card reveal"><div class="highlight-icon">🏗️</div><div><h4 data-i18n="about.h2Title">Software Architect</h4><p data-i18n="about.h2Desc"></p></div></div>
-          <div class="highlight-card reveal"><div class="highlight-icon">🧠</div><div><h4 data-i18n="about.h3Title">Legal Tech Pioneer</h4><p data-i18n="about.h3Desc"></p></div></div>
-          <div class="highlight-card reveal"><div class="highlight-icon">🎓</div><div><h4 data-i18n="about.h4Title">Honor Graduate · Designer</h4><p data-i18n="about.h4Desc"></p></div></div>
-          <div class="highlight-card reveal"><div class="highlight-icon">🗄️</div><div><h4 data-i18n="about.h5Title">Database Specialist</h4><p data-i18n="about.h5Desc"></p></div></div>
-          <div class="highlight-card reveal"><div class="highlight-icon">🌍</div><div><h4 data-i18n="about.h6Title">Multilingual</h4><p data-i18n="about.h6Desc"></p></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag" data-i18n="education.tag">// education & credentials</span>
-        <h2 class="section-title" data-i18n="education.title">Built on solid foundations.</h2>
-        <p class="section-desc" data-i18n="education.desc"></p>
-      </div>
-      <div class="edu-grid">
-        <article class="edu-card reveal">
-          <div class="edu-icon">💻</div>
-          <div class="edu-period" data-i18n="education.e1Period">2023 — 2025</div>
-          <h3 data-i18n="education.e1Degree">Associate Degree — Software Department</h3>
-          <p class="edu-school" data-i18n="education.e1School">Istanbul University</p>
-          <p class="edu-note" data-i18n="education.e1Note"></p>
-          <span class="edu-badge">🎓 Honor Graduate</span>
-        </article>
-        <article class="edu-card reveal">
-          <div class="edu-icon">⚖️</div>
-          <div class="edu-period" data-i18n="education.e2Period">2000 — 2004</div>
-          <h3 data-i18n="education.e2Degree">LL.B. Law</h3>
-          <p class="edu-school" data-i18n="education.e2School">Eastern Mediterranean University, Cyprus</p>
-          <p class="edu-note" data-i18n="education.e2Note"></p>
-        </article>
-        <article class="edu-card reveal">
-          <div class="edu-icon">🏫</div>
-          <div class="edu-period" data-i18n="education.e3Period">Graduate</div>
-          <h3 data-i18n="education.e3Degree">High School Diploma</h3>
-          <p class="edu-school" data-i18n="education.e3School">Ankara Tevfik Fikret High School</p>
-          <p class="edu-note" data-i18n="education.e3Note"></p>
-        </article>
-      </div>
-      <div class="cred-row reveal">
-        <div class="cred-card"><span class="cred-icon">⚖️</span><div><h4 data-i18n="education.c1Title">Istanbul Bar Association</h4><p data-i18n="education.c1Desc"></p></div></div>
-        <div class="cred-card"><span class="cred-icon">🏅</span><div><h4 data-i18n="education.c2Title">Honor Graduate</h4><p data-i18n="education.c2Desc"></p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag" data-i18n="experience.tag">// professional experience</span>
-        <h2 class="section-title" data-i18n="experience.title">A career across two worlds.</h2>
-        <p class="section-desc" data-i18n="experience.desc"></p>
-      </div>
-      <div class="work-list">
-        <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w1Year">2024 — Present</span><span class="work-company" data-i18n="experience.w1Company">Independent / Legal Tech</span></div><h3 data-i18n="experience.w1Title">Founder & Lead Architect — LawToolsAI</h3><p data-i18n="experience.w1Desc"></p><div class="timeline-tags"><span class="tag">Next.js</span><span class="tag">LangGraph</span><span class="tag">RAG</span><span class="tag">MCP</span><span class="tag">Legal Tech</span></div></article>
-        <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w2Year">2024 — 2025</span><span class="work-company" data-i18n="experience.w2Company">Crypto & Digital Assets</span></div><h3 data-i18n="experience.w2Title">Software Engineer</h3><p data-i18n="experience.w2Desc"></p><div class="timeline-tags"><span class="tag">Crypto</span><span class="tag">Blockchain</span><span class="tag">Web3</span></div></article>
-        <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w3Year">2021 — 2024</span><span class="work-company" data-i18n="experience.w3Company">Crypto & Blockchain Technology</span></div><h3 data-i18n="experience.w3Title">Architect Software Engineer</h3><p data-i18n="experience.w3Desc"></p><div class="timeline-tags"><span class="tag">Crypto</span><span class="tag">Architecture</span><span class="tag">Microservices</span></div></article>
-        <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w4Year">2014 — 2021</span><span class="work-company" data-i18n="experience.w4Company">Crypto & Blockchain Technology</span></div><h3 data-i18n="experience.w4Title">Software Engineer</h3><p data-i18n="experience.w4Desc"></p><div class="timeline-tags"><span class="tag">Crypto</span><span class="tag">API Design</span><span class="tag">MySQL</span></div></article>
-        <article class="work-card work-legal reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w5Year">2006 — Present</span><span class="work-company" data-i18n="experience.w5Company">Yıldırım & Yurdaöl Law Office</span></div><h3 data-i18n="experience.w5Title">Attorney at Law</h3><p data-i18n="experience.w5Desc"></p><div class="timeline-tags"><span class="tag">Commercial Law</span><span class="tag">IP</span><span class="tag">Transport</span><span class="tag">Labor Law</span></div></article>
-        <article class="work-card reveal"><div class="work-meta"><span class="work-year" data-i18n="experience.w6Year">2006 — 2014</span><span class="work-company" data-i18n="experience.w6Company">Independent</span></div><h3 data-i18n="experience.w6Title">Freelance Developer & Designer</h3><p data-i18n="experience.w6Desc"></p><div class="timeline-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Design</span></div></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="legal" class="section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag" data-i18n="legal.tag">// legal practice</span>
-        <h2 class="section-title" data-i18n="legal.title">Practice areas & expertise.</h2>
-        <p class="section-desc" data-i18n="legal.desc"></p>
-      </div>
-      <div class="legal-grid" id="legal-areas"></div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag" data-i18n="skills.tag">// skills</span>
-        <h2 class="section-title" data-i18n-html="skills.titleHtml">Wide toolkit,<br>deeper expertise.</h2>
-      </div>
-      <div class="skills-bento">
-        <div class="skill-card large reveal">
-          <div class="skill-icon">⚛️</div>
-          <h3 data-i18n="skills.frontend">Frontend & UI</h3>
-          <div class="skill-list">
-            <span class="skill-pill">React</span><span class="skill-pill">Next.js</span><span class="skill-pill">TypeScript</span>
-            <span class="skill-pill">Tailwind CSS</span><span class="skill-pill">Vue.js</span><span class="skill-pill">Figma</span>
+          <div class="skill-card tall reveal">
+            <div class="skill-icon">📊</div>
+            <h3 data-i18n="skills.depth">Expertise Depth</h3>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar1">Full-Stack Development</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 95%"></div></div></div>
+              <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar2">Legal Domain Knowledge</span><span>93%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 93%"></div></div></div>
+              <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar3">System Architecture</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 92%"></div></div></div>
+              <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar4">Database Design</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 92%"></div></div></div>
+              <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar5">AI / LLM Integration</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 88%"></div></div></div>
+              <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar6">UI/UX Design</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 85%"></div></div></div>
+            </div>
           </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🔧</div>
-          <h3 data-i18n="skills.backend">Backend</h3>
-          <div class="skill-list">
-            <span class="skill-pill">Node.js</span><span class="skill-pill">Python</span><span class="skill-pill">Java</span>
-            <span class="skill-pill">Go</span><span class="skill-pill">PHP</span><span class="skill-pill">REST / GraphQL</span>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🗃️</div>
+            <h3 data-i18n="skills.database">Database</h3>
+            <div class="skill-list">
+              <span class="skill-pill">PostgreSQL</span><span class="skill-pill">MySQL</span><span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">Redis</span><span class="skill-pill">Qdrant</span>
+            </div>
           </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">⚖️</div>
-          <h3 data-i18n="skills.legalTech">Legal Tech</h3>
-          <div class="skill-list">
-            <span class="skill-pill">UYAP Integration</span><span class="skill-pill">Legal AI</span><span class="skill-pill">Document Management</span>
-            <span class="skill-pill">ONLYOFFICE</span><span class="skill-pill">Compliance</span>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🤖</div>
+            <h3 data-i18n="skills.ai">Artificial Intelligence</h3>
+            <div class="skill-list">
+              <span class="skill-pill">RAG</span><span class="skill-pill">LangGraph</span><span class="skill-pill">MCP</span>
+              <span class="skill-pill">OpenAI / Claude</span>
+            </div>
           </div>
-        </div>
-        <div class="skill-card tall reveal">
-          <div class="skill-icon">📊</div>
-          <h3 data-i18n="skills.depth">Expertise Depth</h3>
-          <div class="skill-bar-group">
-            <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar1">Full-Stack Development</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 95%"></div></div></div>
-            <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar2">Legal Domain Knowledge</span><span>93%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 93%"></div></div></div>
-            <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar3">System Architecture</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 92%"></div></div></div>
-            <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar4">Database Design</span><span>92%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 92%"></div></div></div>
-            <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar5">AI / LLM Integration</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 88%"></div></div></div>
-            <div class="skill-bar-item"><div class="skill-bar-header"><span data-i18n="skills.bar6">UI/UX Design</span><span>85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 85%"></div></div></div>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🗃️</div>
-          <h3 data-i18n="skills.database">Database</h3>
-          <div class="skill-list">
-            <span class="skill-pill">MySQL / MariaDB</span><span class="skill-pill">PostgreSQL</span><span class="skill-pill">MongoDB</span>
-            <span class="skill-pill">Redis</span><span class="skill-pill">Qdrant</span><span class="skill-pill">Prisma</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🤖</div>
-          <h3 data-i18n="skills.ai">Artificial Intelligence</h3>
-          <div class="skill-list">
-            <span class="skill-pill">RAG Pipeline</span><span class="skill-pill">LangGraph</span><span class="skill-pill">MCP Protocol</span>
-            <span class="skill-pill">OpenAI / Claude</span><span class="skill-pill">Vector Search</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">☁️</div>
-          <h3 data-i18n="skills.devops">DevOps & Infrastructure</h3>
-          <div class="skill-list">
-            <span class="skill-pill">Docker</span><span class="skill-pill">Linux</span><span class="skill-pill">Nginx</span>
-            <span class="skill-pill">BullMQ</span><span class="skill-pill">Git</span><span class="skill-pill">CI/CD</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="terminal-section" data-i18n-attr="aria-label:terminal.label">
-    <div class="container">
-      <div class="terminal reveal">
-        <div class="terminal-header">
-          <span class="terminal-dot red"></span><span class="terminal-dot yellow"></span><span class="terminal-dot green"></span>
-          <span class="terminal-title">ondery@istanbul ~ zsh</span>
-        </div>
-        <div class="terminal-body">
-          <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">whoami</span></div>
-          <div class="terminal-line"><span class="t-output" data-i18n="terminal.whoami"></span></div>
-          <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">cat ~/.profile</span></div>
-          <div class="terminal-line"><span class="t-output" data-i18n="terminal.role"></span></div>
-          <div class="terminal-line"><span class="t-output" data-i18n="terminal.edu"></span></div>
-          <div class="terminal-line"><span class="t-output" data-i18n="terminal.exp"></span></div>
-          <div class="terminal-line"><span class="t-output" data-i18n="terminal.langs"></span></div>
-          <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">git log --oneline -1</span></div>
-          <div class="terminal-line"><span class="t-success">a1b2c3d feat: deploy legal-ai platform with RAG + MCP integration</span></div>
-          <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">echo $STATUS</span></div>
-          <div class="terminal-line"><span class="t-highlight" data-i18n="terminal.status"></span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag" data-i18n="projects.tag">// projects</span>
-        <h2 class="section-title" data-i18n-html="projects.titleHtml">A selection of my work.</h2>
-        <p class="section-desc" data-i18n="projects.desc"></p>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card featured reveal">
-          <div class="project-visual"><div class="project-visual-bg bg-law"></div><span class="project-visual-icon">⚖️</span></div>
-          <div class="project-body">
-            <h3 data-i18n="projects.lawTitle">LawToolsAI — Legal AI Platform</h3>
-            <p data-i18n="projects.lawDesc"></p>
-            <div class="project-tech"><span class="tag">Next.js</span><span class="tag">LangGraph</span><span class="tag">MCP</span><span class="tag">RAG</span><span class="tag">Prisma</span></div>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-visual"><div class="project-visual-bg bg-rag"></div><span class="project-visual-icon">🔍</span></div>
-          <div class="project-body"><h3>RAGFlow</h3><p data-i18n="projects.ragDesc"></p><div class="project-tech"><span class="tag">Go</span><span class="tag">Python</span></div><a href="https://github.com/ondery/ragflow" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-visual"><div class="project-visual-bg bg-office"></div><span class="project-visual-icon">📄</span></div>
-          <div class="project-body"><h3 data-i18n="projects.officeTitle">ONLYOFFICE Integration</h3><p data-i18n="projects.officeDesc"></p><div class="project-tech"><span class="tag">JavaScript</span><span class="tag">ONLYOFFICE</span></div><a href="https://github.com/ondery/DocumentServer" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-visual"><div class="project-visual-bg bg-outline"></div><span class="project-visual-icon">📝</span></div>
-          <div class="project-body"><h3>Outliner</h3><p data-i18n="projects.outlinerDesc"></p><div class="project-tech"><span class="tag">TypeScript</span></div><a href="https://github.com/ondery/outliner" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-visual"><div class="project-visual-bg bg-wc"></div><span class="project-visual-icon">⚽</span></div>
-          <div class="project-body"><h3>World Cup 2026</h3><p data-i18n="projects.wcDesc"></p><div class="project-tech"><span class="tag">HTML</span><span class="tag">CSS</span></div><a href="https://github.com/ondery/world-cup-2026" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-visual"><div class="project-visual-bg bg-ai"></div><span class="project-visual-icon">🔗</span></div>
-          <div class="project-body"><h3 data-i18n="projects.neuraTitle">NeuraFlow</h3><p data-i18n="projects.neuraDesc"></p><div class="project-tech"><span class="tag">TypeScript</span><span class="tag">AI</span></div><a href="https://github.com/ondery/neuraflow" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <span class="section-tag" data-i18n="contact.tag">// contact</span>
-          <h3 data-i18n-html="contact.titleHtml">Let's build together.</h3>
-          <p data-i18n="contact.desc"></p>
-          <div class="contact-links">
-            <a href="mailto:ondery777@gmail.com" class="contact-link">
-              <div class="contact-link-icon">✉️</div>
-              <div class="contact-link-text"><span data-i18n="contact.email">Email</span><strong>ondery777@gmail.com</strong></div>
-            </a>
-            <a href="https://www.linkedin.com/in/onder-yildirim/" class="contact-link" target="_blank" rel="noopener noreferrer">
-              <div class="contact-link-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
-              <div class="contact-link-text"><span data-i18n="contact.linkedin">LinkedIn</span><strong>/in/onder-yildirim</strong></div>
-            </a>
-            <a href="https://github.com/ondery" class="contact-link" target="_blank" rel="noopener noreferrer">
-              <div class="contact-link-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></div>
-              <div class="contact-link-text"><span>GitHub</span><strong>@ondery</strong></div>
-            </a>
-            <div class="contact-link">
-              <div class="contact-link-icon">💬</div>
-              <div class="contact-link-text"><span>WeChat</span><strong>onderyyy</strong></div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">☁️</div>
+            <h3 data-i18n="skills.devops">DevOps</h3>
+            <div class="skill-list">
+              <span class="skill-pill">Docker</span><span class="skill-pill">Linux</span><span class="skill-pill">Nginx</span>
+              <span class="skill-pill">CI/CD</span>
             </div>
           </div>
         </div>
-        <div class="contact-quote reveal">
-          <blockquote data-i18n="contact.quote"></blockquote>
-          <cite data-i18n="contact.cite">— Önder Yıldırım</cite>
+      </div>
+    </section>
+
+    <section class="terminal-section doc-section section-alt" data-i18n-attr="aria-label:terminal.label">
+      <div class="container">
+        <div class="terminal reveal">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span><span class="terminal-dot yellow"></span><span class="terminal-dot green"></span>
+            <span class="terminal-title">ondery@istanbul ~ zsh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">whoami</span></div>
+            <div class="terminal-line"><span class="t-output" data-i18n="terminal.whoami"></span></div>
+            <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">cat ~/.profile</span></div>
+            <div class="terminal-line"><span class="t-output" data-i18n="terminal.role"></span></div>
+            <div class="terminal-line"><span class="t-output" data-i18n="terminal.edu"></span></div>
+            <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">git log --oneline -1</span></div>
+            <div class="terminal-line"><span class="t-success">a1b2c3d feat: deploy legal-ai platform with RAG + MCP integration</span></div>
+            <div class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">echo $STATUS</span></div>
+            <div class="terminal-line"><span class="t-highlight" data-i18n="terminal.status"></span></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p data-i18n-html="footer.textHtml"></p>
-    </div>
-  </footer>
+    <section id="projects" class="doc-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="projects.tag">// projects</span>
+          <h2 class="section-title" data-i18n-html="projects.titleHtml">A selection of my work.</h2>
+          <p class="section-desc" data-i18n="projects.desc"></p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card featured reveal">
+            <div class="project-visual"><div class="project-visual-bg bg-law"></div><span class="project-visual-icon">⚖️</span></div>
+            <div class="project-body">
+              <h3 data-i18n="projects.lawTitle">LawToolsAI — Legal AI Platform</h3>
+              <p data-i18n="projects.lawDesc"></p>
+              <div class="project-tech"><span class="tag">Next.js</span><span class="tag">LangGraph</span><span class="tag">RAG</span><span class="tag">Prisma</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-visual-bg bg-rag"></div><span class="project-visual-icon">🔍</span></div>
+            <div class="project-body"><h3>RAGFlow</h3><p data-i18n="projects.ragDesc"></p><div class="project-tech"><span class="tag">Go</span><span class="tag">Python</span></div><a href="https://github.com/ondery/ragflow" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-visual-bg bg-office"></div><span class="project-visual-icon">📄</span></div>
+            <div class="project-body"><h3 data-i18n="projects.officeTitle">ONLYOFFICE Integration</h3><p data-i18n="projects.officeDesc"></p><a href="https://github.com/ondery/DocumentServer" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-visual-bg bg-outline"></div><span class="project-visual-icon">📝</span></div>
+            <div class="project-body"><h3>Outliner</h3><p data-i18n="projects.outlinerDesc"></p><a href="https://github.com/ondery/outliner" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-visual-bg bg-wc"></div><span class="project-visual-icon">⚽</span></div>
+            <div class="project-body"><h3>World Cup 2026</h3><p data-i18n="projects.wcDesc"></p><a href="https://github.com/ondery/world-cup-2026" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-visual-bg bg-ai"></div><span class="project-visual-icon">🔗</span></div>
+            <div class="project-body"><h3 data-i18n="projects.neuraTitle">NeuraFlow</h3><p data-i18n="projects.neuraDesc"></p><a href="https://github.com/ondery/neuraflow" class="project-link" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewGithub">View on GitHub →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="doc-section section-alt">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag" data-i18n="contact.tag">// contact</span>
+            <h3 data-i18n-html="contact.titleHtml">Let's build together.</h3>
+            <p data-i18n="contact.desc"></p>
+            <div class="contact-links">
+              <a href="mailto:ondery777@gmail.com" class="contact-link">
+                <div class="contact-link-icon">✉️</div>
+                <div class="contact-link-text"><span data-i18n="contact.email">Email</span><strong>ondery777@gmail.com</strong></div>
+              </a>
+              <a href="https://www.linkedin.com/in/onder-yildirim/" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <div class="contact-link-icon">💼</div>
+                <div class="contact-link-text"><span data-i18n="contact.linkedin">LinkedIn</span><strong>/in/onder-yildirim</strong></div>
+              </a>
+              <a href="https://github.com/ondery" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <div class="contact-link-icon">🐙</div>
+                <div class="contact-link-text"><span>GitHub</span><strong>@ondery</strong></div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-quote reveal">
+            <blockquote data-i18n="contact.quote"></blockquote>
+            <cite data-i18n="contact.cite">— Önder Yıldırım</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p data-i18n-html="footer.textHtml"></p>
+      </div>
+    </footer>
+  </div>
 
   <script src="js/translations.js"></script>
   <script src="js/translations-fr.js"></script>

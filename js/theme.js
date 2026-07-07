@@ -12,7 +12,7 @@
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.content = theme === "light" ? "#f8f6f1" : "#07080d";
+    if (meta) meta.content = theme === "light" ? "#f4f6f9" : "#080b12";
 
     document.querySelectorAll(".theme-btn").forEach((btn) => {
       const isDark = theme === "dark";
