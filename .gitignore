@@ -1,4 +1,7 @@
 .agents/
+.cursor/
+.gemini/
+.github/
 .claude
 .environment/
 .logs/
@@ -11,3 +14,7 @@
 .variables/
 .workspace/
 .workspace/
+
+PRODUCT.md
+hooks.json
+config.json
