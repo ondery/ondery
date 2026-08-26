@@ -459,7 +459,7 @@ window.OnderyTranslations = {
       desc: "Hukuk danışmanlığı, yazılım mimarisi, yapay zeka entegrasyonu veya full-stack geliştirme — her türlü iş birliği için iletişime geçin.",
       email: "E-posta",
       linkedin: "LinkedIn",
-      quote: "Aslında sıradan bir insanım — ama hem hukuk pratiğimi hem mühendislik işimi ciddiye alıyorum. İlginiz ve sevginiz için teşekkür ederim.",
+      quote: "Aslında sıradan bir insanım — ama hem hukuk hem mühendislik işimi ciddiye alıyorum. İlginiz ve sevginiz için teşekkür ederim.",
       cite: "— Önder Yıldırım",
     },
     footer: {
