@@ -1,0 +1,13 @@
+.agents/
+.claude
+.environment/
+.logs/
+.models/
+.prompts/
+.results/
+.scripts/
+.tools/
+.utils/
+.variables/
+.workspace/
+.workspace/
