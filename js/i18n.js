@@ -27,14 +27,25 @@
     const t = translations[lang];
     if (!container || !t?.legal?.areas) return;
 
+    const icons = {
+      scale: "i-scale",
+      ship: "i-ship",
+      badge: "i-badge",
+      briefcase: "i-briefcase",
+      file: "i-file",
+      users: "i-users",
+      car: "i-car",
+      globe: "i-globe",
+    };
+
     container.innerHTML = t.legal.areas
       .map(
         (a) => `
-        <div class="legal-card reveal">
-          <div class="legal-icon">${a.icon}</div>
+        <article class="legal-card reveal">
+          <div class="legal-icon"><svg class="icon" aria-hidden="true"><use href="#${icons[a.icon] || "i-scale"}"/></svg></div>
           <h4>${a.title}</h4>
           <p>${a.desc}</p>
-        </div>`
+        </article>`
       )
       .join("");
 

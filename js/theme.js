@@ -12,13 +12,19 @@
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.content = theme === "light" ? "#f4f6f9" : "#080b12";
+    if (meta) meta.content = theme === "light" ? "#f7f5f0" : "#080b12";
 
     document.querySelectorAll(".theme-btn").forEach((btn) => {
       const isDark = theme === "dark";
       btn.classList.toggle("is-dark", isDark);
       btn.setAttribute("aria-pressed", isDark ? "true" : "false");
       btn.setAttribute("title", isDark ? btn.dataset.labelLight || "Light mode" : btn.dataset.labelDark || "Dark mode");
+    });
+
+    document.querySelectorAll(".theme-seg").forEach((btn) => {
+      const isActive = btn.dataset.themeSet === theme;
+      btn.classList.toggle("active", isActive);
+      btn.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 
     document.dispatchEvent(new CustomEvent("themechange", { detail: { theme } }));
@@ -38,6 +44,10 @@
 
   document.querySelectorAll(".theme-btn").forEach((btn) => {
     btn.addEventListener("click", toggleTheme);
+  });
+
+  document.querySelectorAll(".theme-seg").forEach((btn) => {
+    btn.addEventListener("click", () => setTheme(btn.dataset.themeSet));
   });
 
   applyTheme(getTheme());

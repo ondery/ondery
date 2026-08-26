@@ -150,21 +150,6 @@
   );
   counters.forEach((c) => counterObs.observe(c));
 
-  /* ── Skill bars ── */
-  const bars = document.querySelectorAll(".skill-bar-fill");
-  const barObs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animated");
-          barObs.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
-  bars.forEach((b) => barObs.observe(b));
-
   /* ── Skill card mouse glow ── */
   document.querySelectorAll(".skill-card").forEach((card) => {
     card.addEventListener("mousemove", (e) => {
@@ -174,32 +159,5 @@
     });
   });
 
-  /* ── Terminal typing ── */
-  const terminalLines = document.querySelectorAll(".terminal-line");
-  const termObs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        terminalLines.forEach((line, i) => {
-          setTimeout(() => line.classList.add("show"), i * 300);
-        });
-        termObs.unobserve(entry.target);
-      });
-    },
-    { threshold: 0.3 }
-  );
-  const terminal = document.querySelector(".terminal");
-  if (terminal) termObs.observe(terminal);
-
-  /* ── Smooth anchor scroll ── */
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", (e) => {
-      const id = anchor.getAttribute("href");
-      if (id === "#") return;
-      const target = document.querySelector(id);
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
+  /* ── Native hash scroll (scroll-behavior + scroll-padding on html) ── */
 })();
