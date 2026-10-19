@@ -6,7 +6,7 @@
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-ondery.github.io%2Fondery-d4a574?style=for-the-badge&logoColor=white)](https://ondery.github.io/ondery/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@onder--yildirim-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/onder-yildirim/)
-[![Email](https://img.shields.io/badge/Email-onery777@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ondery777@gmail.com)
+[![Email](https://img.shields.io/badge/Email-ondery777@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ondery777@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-@ondery-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ondery)
 
 <br>
@@ -82,6 +82,15 @@ Supports **English**, **Turkish**, and **French** · **Dark / Light** theme togg
 
 | Project | Description | Stack |
 |---------|-------------|-------|
+| ♻️ **[Eskici](https://github.com/eskici-app)** <sub>🔒 Private</sub> | Free bulky-item pickup service with tendered transport & regional warehouses and a low-price second-hand marketplace. | Next.js, Express microservices, Prisma/PostgreSQL, Redis, iyzico, Docker/Kubernetes |
+| 💳 **[Tahsilat Orkestra](https://github.com/tahsilat-orkestra)** <sub>🔒 Private</sub> | Multi-tenant payment-orchestration API routing checkouts to licensed providers by fee, instalment and health with seamless failover; card data never touches its servers. | Next.js, TypeScript, Prisma + PostgreSQL (RLS), Docker |
+| 🔏 **[DeponentAI](https://github.com/deponent-ai)** <sub>🔒 Private</sub> | AI "sworn-witness" service issuing Ed25519-signed, hash-chained, publicly verifiable content attestations without storing files. | Next.js 16, Prisma/PostgreSQL, LiteLLM, C2PA, ONNX Runtime, MCP server |
+| 💍 **[Golder](https://github.com/golder-app)** <sub>🔒 Private</sub> | Gold jewellery e-commerce with live gold-price pricing, checkout price lock, in-store sales and e-invoicing. | Next.js, Prisma/PostgreSQL, iyzico, Docker |
+| 🌱 **[Sera Platformu](https://github.com/seraplatform)** <sub>🔒 Private</sub> | Multi-tenant remote monitoring and control for greenhouse hardware (sensors, valves, vents, cameras) over MQTT. | Next.js 15, Auth.js, Prisma/PostgreSQL, MQTT, Leaflet |
+| 🪙 **[Meridian Fractional](https://github.com/meridian-fractional)** <sub>🔒 Private</sub> | Tokenized fractional ownership of real-world assets on Avalanche with marketplace, governance and revenue sharing. | Next.js 15, Solidity/Hardhat, wagmi/viem, Prisma |
+| 💡 **[MiLED](https://github.com/miled-streamdeck)** <sub>🔒 Private</sub> | Stream Deck + plugin controlling the Xiaomi Mi LED Desk Lamp 1S locally (brightness, power, color temperature). | TypeScript, Elgato Stream Deck SDK |
+| 🎚️ **[AudioForge Pro](https://github.com/audioforge-pro)** <sub>🔒 Private</sub> | Stream Deck + plugin for Windows master volume/mute with live meter and OBS audio filter control. | TypeScript, Stream Deck SDK, obs-websocket |
+| 🌐 **[Quick Translator](https://github.com/ondery/quick-translator)** <sub>Open source</sub> | Lightweight Chrome extension translating selected text and whole pages in place, with text-to-speech. | JavaScript, Chrome Manifest V3 |
 | ⚖️ **LawToolsAI** | Multi-tenant legal AI platform (Founder) | Next.js, LangGraph, MCP, RAG, Prisma |
 | 🔍 **[RAGFlow](https://github.com/ondery/ragflow)** | Open-source RAG engine development | Go, Python |
 | 📄 **[ONLYOFFICE](https://github.com/ondery/DocumentServer)** | Document server integration | JavaScript, Node.js |
@@ -124,6 +133,6 @@ Supports **English**, **Turkish**, and **French** · **Dark / Light** theme togg
 
 <div align="center">
 
-<sub>🌐 Portfolio available in <strong>English</strong> and <strong>Turkish</strong></sub>
+<sub>🌐 Portfolio available in <strong>English</strong>, <strong>Turkish</strong> and <strong>French</strong></sub>
 
 </div>

@@ -1,8 +1,4 @@
-.agents/
-.cursor/
-.gemini/
 .github/
-.claude
 .environment/
 .logs/
 .models/
