@@ -109,7 +109,7 @@ Supports **English**, **Turkish**, and **French** · **Dark / Light** theme togg
 
 <br><br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ondery&theme=react-dark&hide_border=true&bg_color=0d1117&color=d4a574&line=d4a574&point=c9d1d9" alt="Activity Graph" />
+<img height="180" src="https://streak-stats.demolab.com?user=ondery&theme=react&hide_border=true&background=0d1117&ring=d4a574&fire=d4a574&currStreakLabel=d4a574&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&stroke=30363d" alt="GitHub Streak" />
 
 </div>
 
