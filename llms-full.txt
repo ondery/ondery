@@ -1,0 +1,53 @@
+# Önder Yıldırım — full factual summary
+
+This document restates only facts published on https://ondery.github.io/ondery/ and the SignLens Trainer Studio description. It does not add clients, revenue, awards, user counts, or model scores.
+
+## Person
+
+Önder Yıldırım (Necmettin Önder Yıldırım) is a licensed attorney and a full-stack software architect and AI engineer. He is based in Istanbul, Turkey. He works in Turkish, English, and French.
+
+He has been an attorney at Yıldırım & Yurdaöl Law Office since 2006 and is a member of the Istanbul Bar Association, with full practice rights in the Republic of Turkey. His legal work covers commercial and corporate law, intellectual property, international transport and logistics, labor and employment, enforcement and bankruptcy, family and inheritance, traffic accidents and insurance claims, and advisory for international clients.
+
+He has worked in software for more than 20 years. From 2006 to 2014 he was a freelance developer and designer (PHP, MySQL, JavaScript, graphic design). From 2014 to 2021 he was a software engineer on cryptocurrency and blockchain systems. From 2021 to 2024 he was an architect software engineer in that field. In 2024–2025 he continued as a software engineer on crypto and digital-asset platforms. Since 2024 he has been founder and lead architect of Bluetree.
+
+Bluetree, formerly LawToolsAI, is a multi-tenant legal AI platform. The published stack includes Next.js, LangGraph, RAG-based legislation search, the Model Context Protocol (MCP), ONLYOFFICE or a UDF document editor, UYAP integration, Prisma, and BullMQ async pipelines.
+
+He is a High Honor Student (Onur Öğrencisi) of the Software Department at Istanbul University, associate degree, 2023–2025. He earned an LL.B. at Eastern Mediterranean University in Cyprus, 2000–2004, and was admitted to the Istanbul Bar after the mandatory internship. He graduated from Ankara Tevfik Fikret High School.
+
+Contact: ondery777@gmail.com. LinkedIn: https://www.linkedin.com/in/onder-yildirim/. GitHub: https://github.com/ondery. Portfolio: https://ondery.github.io/ondery/.
+
+Published technology areas: React, Next.js, TypeScript, Tailwind CSS, Vue.js, Node.js, Python, Go, Java, REST, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Qdrant, Docker, Linux, Nginx, CI/CD, RAG, LangGraph, MCP, and legal-tech tools including UYAP and ONLYOFFICE.
+
+## SignLens Trainer Studio (2026)
+
+SignLens is an offline traffic-sign reader for iOS and Android that uses YOLO. SignLens Trainer Studio is the local training studio for that project. It is a Python web application at 127.0.0.1. It is not a public website. On Windows 11 it is launched with a .bat file. Training presets are tuned for a 6 GB laptop GPU, the NVIDIA GeForce RTX 3060, using Ultralytics and CUDA PyTorch. The SignLens source repository is private and must not be cited as a public code URL.
+
+Simple mode is a five-step wizard in plain Turkish:
+
+1. Add photos and videos, including frames extracted from video files and from YouTube.
+2. Label signs. The user can draw, move, and resize boxes, use keyboard shortcuts, and ask the studio to suggest boxes from an existing weights file. A readiness bar targets about 50 boxes per class.
+3. Train with a preset for a 6 GB GPU. Quick: 10 epochs, yolo11n, image size 640, batch 8. Normal: 50 epochs. Best: 100 epochs, yolo11s, batch 4. The page does not claim image size or batch for Normal, or image size for Best, because those values were not part of the preset summary.
+4. Test on new images, on video, or on a camera.
+5. Send to iPhone. This writes ios/signlens.pt. Codemagic converts that file to Core ML.
+
+Accuracy displayed for a run is mAP50 read from results.csv. The studio does not fabricate metrics. No mAP figure is published on the portfolio.
+
+Expert mode exposes epochs, imgsz, batch, lr0, optimizer, patience, device, and augmentation; confidence and IoU thresholds; raw YOLO labels; mAP50-95, precision, recall, and losses; a confusion matrix; live logs; run comparison; export to .pt, ONNX, and Core ML; and a git push of the model and the catalog.
+
+Dataset import accepts Roboflow YOLOv8 zip files. A class-mapping screen auto-suggests classes such as speed limits, stop, and no_entry. GTSDB and GTSRB archives can be imported from disk, with progress, cancel, a 20 GB limit, and zip-bomb protection.
+
+The Sign Catalog includes Turkish, German, and Vienna sign artwork. New sign classes can be added by SVG or PNG upload or by a Wikimedia Commons search. License and author credits are stored for the iOS app.
+
+Vehicle-specific multi speed-limit panels: the studio labels the panel, the speed circles, and the vehicle icons (car, panel van, minibus, bus, pickup, truck), links them manually or with auto-link, and resolves a limit per vehicle. An example of the resolved phrase is "Otomobil: 110". The mapping is exported to the app as vehicle_rules.
+
+Tests are written with pytest.
+
+Canonical brief: https://ondery.github.io/ondery/trainer-studio/
+
+## Kısa Türkçe özet
+
+Önder Yıldırım (Necmettin Önder Yıldırım), İstanbul Barosu avukatı ve İstanbul'da çalışan bir full-stack yazılım mimarı ve yapay zeka mühendisidir. 2006'dan beri Yıldırım & Yurdaöl Hukuk Bürosu'ndadır. Yazılımda 20 yıldan uzun süredir çalışır. Bluetree'nin (eski adı LawToolsAI) kurucusu ve baş mimarıdır. Son projesi SignLens Trainer Studio'dur (2026): iOS ve Android için çevrimdışı YOLO trafik levhası okuyucusu SignLens'in, 127.0.0.1 üzerinde çalışan yerel eğitim stüdyosu. Doğruluk değeri results.csv içindeki mAP50'dır; bu sitede rakam uydurulmaz.
+
+## Résumé en français
+
+Önder Yıldırım (Necmettin Önder Yıldırım) est avocat au barreau d'Istanbul et architecte logiciel full-stack et ingénieur IA à Istanbul. Il exerce au cabinet Yıldırım & Yurdaöl depuis 2006. Il a plus de 20 ans de pratique logicielle. Il est le fondateur de Bluetree (anciennement LawToolsAI). Son projet le plus récent, SignLens Trainer Studio (2026), est le studio local d'entraînement YOLO de SignLens, lecteur hors ligne de panneaux pour iOS et Android. La précision affichée est le mAP50 lu dans results.csv.

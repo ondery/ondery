@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignLens Trainer Studio — Önder Yıldırım</title>
+  <meta name="description" content="SignLens Trainer Studio is Önder Yıldırım's local YOLO training studio for SignLens, an offline traffic-sign reader for iOS and Android. It runs at 127.0.0.1.">
+  <meta name="author" content="Önder Yıldırım">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://ondery.github.io/ondery/trainer-studio/">
+  <link rel="author" href="https://ondery.github.io/ondery/#person">
+  <link rel="describedby" href="https://ondery.github.io/ondery/llms.txt" type="text/plain" title="Plain-language summary">
+  <meta property="og:site_name" content="Önder Yıldırım">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:url" content="https://ondery.github.io/ondery/trainer-studio/">
+  <meta property="og:title" content="SignLens Trainer Studio — Önder Yıldırım">
+  <meta property="og:description" content="Local, browser-based YOLO training studio for SignLens, an offline traffic-sign reader. Python app at 127.0.0.1, tuned for a 6 GB RTX 3060. Accuracy is mAP50 from results.csv.">
+  <meta property="og:image" content="https://ondery.github.io/ondery/assets/og-trainer.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SignLens Trainer Studio, a local YOLO training studio by Önder Yıldırım">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SignLens Trainer Studio — Önder Yıldırım">
+  <meta name="twitter:description" content="Local YOLO training studio for the offline SignLens traffic-sign reader. Runs at 127.0.0.1. Accuracy shown is mAP50 read from results.csv.">
+  <meta name="twitter:image" content="https://ondery.github.io/ondery/assets/og-trainer.png">
+  <meta name="twitter:image:alt" content="SignLens Trainer Studio, a local YOLO training studio by Önder Yıldırım">
+  <meta name="theme-color" content="#080b12">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("ondery-theme");
+        document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;450;500;550;600&display=optional">
+  <link rel="stylesheet" href="../css/styles.css?v=5">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://ondery.github.io/ondery/trainer-studio/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Önder Yıldırım",
+            "item": "https://ondery.github.io/ondery/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SignLens Trainer Studio",
+            "item": "https://ondery.github.io/ondery/trainer-studio/"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://ondery.github.io/ondery/trainer-studio/#app",
+        "name": "SignLens Trainer Studio",
+        "url": "https://ondery.github.io/ondery/trainer-studio/",
+        "image": "https://ondery.github.io/ondery/assets/og-trainer.png",
+        "applicationCategory": "DeveloperApplication",
+        "applicationSubCategory": "Computer-vision model training",
+        "operatingSystem": "Windows 11",
+        "datePublished": "2026",
+        "inLanguage": ["tr", "en"],
+        "author": { "@id": "https://ondery.github.io/ondery/#person" },
+        "creator": { "@id": "https://ondery.github.io/ondery/#person" },
+        "isPartOf": { "@id": "https://ondery.github.io/ondery/trainer-studio/#signlens" },
+        "description": "SignLens Trainer Studio is the local, browser-based YOLO training studio for SignLens, an offline traffic-sign reader for iOS and Android. It is a Python web app at 127.0.0.1, launched with a .bat file on Windows 11, and tuned for a 6 GB RTX 3060 laptop GPU using Ultralytics and CUDA PyTorch. It is not a public web service. Reported accuracy is mAP50 read from results.csv.",
+        "featureList": "Plain-Turkish five-step wizard; box labeling with keyboard shortcuts and suggest-from-model; 6 GB GPU presets (Quick, Normal, Best); mAP50 from results.csv; test on image, video, or camera; write ios/signlens.pt for Codemagic Core ML conversion; expert hyperparameters; Roboflow YOLOv8 and GTSDB/GTSRB import; sign catalog; per-vehicle speed-limit rules; pytest.",
+        "softwareRequirements": "Python, Ultralytics, CUDA PyTorch, a local browser, and an NVIDIA GPU. Presets are tuned for 6 GB VRAM (GeForce RTX 3060). The app binds to 127.0.0.1."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://ondery.github.io/ondery/trainer-studio/#signlens",
+        "name": "SignLens",
+        "applicationCategory": "MobileApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "Offline traffic-sign reader for iOS and Android that uses YOLO. SignLens Trainer Studio is its local training studio.",
+        "author": { "@id": "https://ondery.github.io/ondery/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ondery.github.io/ondery/#person",
+        "name": "Önder Yıldırım",
+        "alternateName": "Necmettin Önder Yıldırım",
+        "url": "https://ondery.github.io/ondery/",
+        "jobTitle": ["Attorney at Law", "Software Architect", "AI Engineer"],
+        "email": "mailto:ondery777@gmail.com",
+        "sameAs": [
+          "https://github.com/ondery",
+          "https://www.linkedin.com/in/onder-yildirim/"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ondery.github.io/ondery/trainer-studio/#faq",
+        "url": "https://ondery.github.io/ondery/trainer-studio/#faq",
+        "isPartOf": { "@id": "https://ondery.github.io/ondery/trainer-studio/#app" },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SignLens Trainer Studio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SignLens Trainer Studio is a local, browser-based YOLO training studio for the SignLens project. It is a Python web app bound to 127.0.0.1, started with a .bat file on Windows 11, and tuned for a laptop NVIDIA GeForce RTX 3060 with 6 GB of VRAM, using Ultralytics and a CUDA build of PyTorch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is SignLens?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SignLens is an offline traffic-sign reader for iOS and Android that uses YOLO. Trainer Studio is the part of SignLens used to label images, train weights, test them, and prepare a model file for the iPhone app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens in simple mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simple mode is a five-step wizard written in plain Turkish. You add photos or videos, including frames taken from a video file or from YouTube; label signs; train with a preset for a 6 GB GPU; test on a new image, a video, or a camera; then send the model to an iPhone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which training presets are published for a 6 GB GPU?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quick runs 10 epochs of yolo11n at image size 640 and batch 8. Normal runs 50 epochs. Best runs 100 epochs of yolo11s at batch 4."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does the accuracy number come from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The accuracy shown after training is mAP50 read from results.csv. The studio does not invent metrics. Expert mode can also show mAP50-95, precision, recall, and the training losses from that same run."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the model get onto an iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The send step writes ios/signlens.pt. Codemagic converts that file to Core ML for the iOS app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which datasets can be imported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Roboflow YOLOv8 zip files open a class-mapping screen that auto-suggests classes such as speed limits, stop, and no_entry. GTSDB and GTSRB archives can be imported from disk, with a progress indicator, cancel, a 20 GB size limit, and zip-bomb protection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are vehicle-specific speed limits labeled?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The studio labels the panel, the speed circles, and the vehicle icons — car, panel van, minibus, bus, pickup, and truck — then links them manually or with auto-link. It resolves one limit per vehicle, for example \"Otomobil: 110\", and exports that mapping as vehicle_rules for the app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Trainer Studio tested?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The project is tested with pytest."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="site-bg" aria-hidden="true">
+    <div class="site-bg-base"></div>
+    <div class="site-bg-mesh"></div>
+    <div class="site-bg-grid"></div>
+    <div class="site-bg-beam"></div>
+    <div class="site-bg-glow site-bg-glow-a"></div>
+    <div class="site-bg-glow site-bg-glow-b"></div>
+    <div class="site-bg-glow site-bg-glow-c"></div>
+    <div class="site-bg-noise"></div>
+  </div>
+
+  <header class="subpage-bar">
+    <a class="sidebar-logo" href="https://ondery.github.io/ondery/">Ön<span>dery</span></a>
+    <nav class="subpage-nav" aria-label="Related pages">
+      <a href="https://ondery.github.io/ondery/">Portfolio of Önder Yıldırım</a>
+      <a href="https://ondery.github.io/ondery/#projects">All projects</a>
+      <a href="https://ondery.github.io/ondery/llms.txt">llms.txt</a>
+    </nav>
+    <button type="button" class="theme-btn is-dark" aria-label="Toggle color theme" data-label-light="Switch to light mode" data-label-dark="Switch to dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </header>
+
+  <main id="content" class="brief">
+    <article>
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="https://ondery.github.io/ondery/">Önder Yıldırım</a>
+        <span aria-hidden="true"> / </span>
+        <span>SignLens Trainer Studio</span>
+      </nav>
+      <p class="feature-kicker">SignLens · latest project · 2026</p>
+      <h1>SignLens Trainer Studio</h1>
+      <p class="brief-lead">SignLens Trainer Studio is the local training application for SignLens, an offline traffic-sign reader for iOS and Android. Önder Yıldırım built it in 2026.</p>
+      <p>It is a Python web app bound to <code>127.0.0.1</code>. It is not a public website. On Windows 11 it starts from a <code>.bat</code> file. The training presets are tuned for a laptop NVIDIA GeForce RTX 3060 with 6 GB of VRAM, using Ultralytics and a CUDA build of PyTorch. The SignLens source is private and is not linked from this site.</p>
+
+      <aside class="lang-summary" lang="tr">
+        <h2>Kısa Türkçe özet</h2>
+        <p>SignLens Trainer Studio, Önder Yıldırım'ın 2026 projesidir. SignLens, iOS ve Android'de çevrimdışı çalışan, YOLO kullanan bir trafik levhası okuyucusudur. Trainer Studio bunun yerel eğitim aracıdır: <code>127.0.0.1</code> adresinde çalışan bir Python web uygulaması, Windows 11'de bir <code>.bat</code> dosyasıyla açılır ve 6 GB RTX 3060 dizüstü GPU'su için Ultralytics ile CUDA PyTorch kullanır. Sade mod, düz Türkçe beş adımlı bir sihirbazdır. Ekrandaki doğruluk, <code>results.csv</code> dosyasından okunan mAP50 değeridir; stüdyo metrik uydurmaz. iPhone adımı <code>ios/signlens.pt</code> yazar; Codemagic bu dosyayı Core ML'e çevirir.</p>
+      </aside>
+      <aside class="lang-summary" lang="fr">
+        <h2>En bref, en français</h2>
+        <p>SignLens Trainer Studio (2026) est le studio local d'entraînement YOLO de SignLens, un lecteur hors ligne de panneaux de signalisation pour iOS et Android, réalisé par Önder Yıldırım. L'application Python tourne sur <code>127.0.0.1</code>. La précision affichée est le mAP50 lu dans <code>results.csv</code>.</p>
+      </aside>
+
+      <h2>What SignLens is</h2>
+      <p>SignLens reads traffic signs on a phone without a network connection. It runs on iOS and Android and uses YOLO. Trainer Studio is the part of that project used to collect images, draw boxes, train weights, test them, and hand a model file to the iOS build.</p>
+
+      <h2>Simple mode</h2>
+      <p>Simple mode is a five-step wizard written in plain Turkish.</p>
+      <ol>
+        <li>Add photos and videos. Frames can be taken from a video file and from YouTube.</li>
+        <li>Label signs. Draw, move, and resize boxes. Keyboard shortcuts are available. “Suggest from model” proposes boxes from an existing weights file. A readiness bar targets about 50 boxes per class.</li>
+        <li>Train with a preset for a 6 GB GPU. The accuracy shown for the run is mAP50 read from <code>results.csv</code>.</li>
+        <li>Test the weights on a new image, a video, or a camera.</li>
+        <li>Send the model to an iPhone. The step writes <code>ios/signlens.pt</code>. Codemagic converts that file to Core ML.</li>
+      </ol>
+
+      <h2>Presets for a 6 GB GPU</h2>
+      <p>Three presets are published. Only the values in this table are part of that description. Image size is stated for Quick. Batch size is stated for Quick and Best. Normal is stated as an epoch count.</p>
+      <table>
+        <caption>Training presets tuned for a 6 GB GPU (RTX 3060).</caption>
+        <thead>
+          <tr>
+            <th scope="col">Preset</th>
+            <th scope="col">Epochs</th>
+            <th scope="col">Model</th>
+            <th scope="col">Image size</th>
+            <th scope="col">Batch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Quick</th>
+            <td>10</td>
+            <td><code>yolo11n</code></td>
+            <td>640</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th scope="row">Normal</th>
+            <td>50</td>
+            <td>Not stated in the preset summary</td>
+            <td>Not stated in the preset summary</td>
+            <td>Not stated in the preset summary</td>
+          </tr>
+          <tr>
+            <th scope="row">Best</th>
+            <td>100</td>
+            <td><code>yolo11s</code></td>
+            <td>Not stated in the preset summary</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Where the accuracy number comes from</h2>
+      <p>The studio reads mAP50 from <code>results.csv</code> after a run. It does not invent a score. This page does not publish a mAP figure, because no measured result is part of the project description used here. Expert mode can also show mAP50-95, precision, recall, and the training losses from the same run, plus the confusion matrix.</p>
+
+      <h2>Expert mode</h2>
+      <p>Expert mode opens the training controls that simple mode keeps behind a preset.</p>
+      <ul>
+        <li>Hyperparameters: epochs, <code>imgsz</code>, batch, <code>lr0</code>, optimizer, patience, device, and augmentation.</li>
+        <li>Inference thresholds: confidence and IoU.</li>
+        <li>Raw YOLO label files.</li>
+        <li>mAP50-95, precision, recall, losses, and the confusion matrix.</li>
+        <li>Live logs and a comparison of runs.</li>
+        <li>Export to <code>.pt</code>, ONNX, and Core ML.</li>
+        <li>A git push of the model and the sign catalog.</li>
+      </ul>
+
+      <h2>Datasets</h2>
+      <h3>Roboflow YOLOv8 zip files</h3>
+      <p>A Roboflow YOLOv8 zip opens a class-mapping screen. The screen auto-suggests familiar sign classes such as speed limits, stop, and <code>no_entry</code>. The mapping is confirmed before import.</p>
+      <h3>GTSDB and GTSRB</h3>
+      <p>Large GTSDB and GTSRB archives are imported from disk. The import shows progress and can be cancelled. It enforces a 20 GB limit and includes zip-bomb protection.</p>
+
+      <h2>Sign catalog</h2>
+      <p>The Sign Catalog includes Turkish, German, and Vienna sign artwork. A new sign class can be added by uploading an SVG or a PNG, or by searching Wikimedia Commons. The license and the author credit are written through so the iOS app can show them.</p>
+
+      <h2>Vehicle-specific speed limits</h2>
+      <p>Some signs are a panel of several limits, one per vehicle. The studio labels the panel, the speed circles, and the vehicle icons. The icons are car, panel van, minibus, bus, pickup, and truck. The user links each circle to an icon by hand, or uses auto-link. The studio then resolves one phrase per vehicle, for example “Otomobil: 110”. That mapping is exported to the app as <code>vehicle_rules</code>.</p>
+
+      <h2>Tests</h2>
+      <p>The project is tested with pytest.</p>
+
+      <h2 id="faq">Questions about Trainer Studio</h2>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>What is SignLens Trainer Studio?</h3>
+          <p>SignLens Trainer Studio is a local, browser-based YOLO training studio for the SignLens project. It is a Python web app bound to 127.0.0.1, started with a .bat file on Windows 11, and tuned for a laptop NVIDIA GeForce RTX 3060 with 6 GB of VRAM, using Ultralytics and a CUDA build of PyTorch.</p>
+        </article>
+        <article class="faq-item">
+          <h3>What is SignLens?</h3>
+          <p>SignLens is an offline traffic-sign reader for iOS and Android that uses YOLO. Trainer Studio is the part of SignLens used to label images, train weights, test them, and prepare a model file for the iPhone app.</p>
+        </article>
+        <article class="faq-item">
+          <h3>What happens in simple mode?</h3>
+          <p>Simple mode is a five-step wizard written in plain Turkish. You add photos or videos, including frames taken from a video file or from YouTube; label signs; train with a preset for a 6 GB GPU; test on a new image, a video, or a camera; then send the model to an iPhone.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Which training presets are published for a 6 GB GPU?</h3>
+          <p>Quick runs 10 epochs of yolo11n at image size 640 and batch 8. Normal runs 50 epochs. Best runs 100 epochs of yolo11s at batch 4.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Where does the accuracy number come from?</h3>
+          <p>The accuracy shown after training is mAP50 read from results.csv. The studio does not invent metrics. Expert mode can also show mAP50-95, precision, recall, and the training losses from that same run.</p>
+        </article>
+        <article class="faq-item">
+          <h3>How does the model get onto an iPhone?</h3>
+          <p>The send step writes ios/signlens.pt. Codemagic converts that file to Core ML for the iOS app.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Which datasets can be imported?</h3>
+          <p>Roboflow YOLOv8 zip files open a class-mapping screen that auto-suggests classes such as speed limits, stop, and no_entry. GTSDB and GTSRB archives can be imported from disk, with a progress indicator, cancel, a 20 GB size limit, and zip-bomb protection.</p>
+        </article>
+        <article class="faq-item">
+          <h3>How are vehicle-specific speed limits labeled?</h3>
+          <p>The studio labels the panel, the speed circles, and the vehicle icons — car, panel van, minibus, bus, pickup, and truck — then links them manually or with auto-link. It resolves one limit per vehicle, for example "Otomobil: 110", and exports that mapping as vehicle_rules for the app.</p>
+        </article>
+        <article class="faq-item">
+          <h3>How is Trainer Studio tested?</h3>
+          <p>The project is tested with pytest.</p>
+        </article>
+      </div>
+
+      <h2>Who built it</h2>
+      <p>Önder Yıldırım (Necmettin Önder Yıldırım) is a licensed attorney at the Istanbul Bar and a full-stack software architect and AI engineer in Istanbul. He has practiced at Yıldırım &amp; Yurdaöl Law Office since 2006. He founded Bluetree, formerly LawToolsAI, a legal AI platform built with Next.js, LangGraph, RAG, and MCP. He works in Turkish, English, and French.</p>
+      <ul class="brief-links">
+        <li><a href="https://ondery.github.io/ondery/">Portfolio</a></li>
+        <li><a href="mailto:ondery777@gmail.com">ondery777@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/onder-yildirim/">LinkedIn profile</a></li>
+        <li><a href="https://github.com/ondery">GitHub profile</a></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <a href="https://github.com/ondery">Necmettin Önder Yıldırım</a> · <a href="https://ondery.github.io/ondery/">Portfolio</a> · <a href="https://ondery.github.io/ondery/llms.txt">llms.txt</a> · <a href="https://ondery.github.io/ondery/llms-full.txt">llms-full.txt</a></p>
+    </div>
+  </footer>
+  <script src="../js/theme.js?v=5"></script>
+</body>
+</html>

@@ -124,31 +124,8 @@
   );
   revealEls.forEach((el) => revealObs.observe(el));
 
-  /* ── Counter animation ── */
-  const counters = document.querySelectorAll("[data-count]");
-  const counterObs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        const target = parseInt(el.dataset.count, 10);
-        const suffix = el.dataset.suffix || "";
-        const duration = 2000;
-        const start = performance.now();
-
-        function tick(now) {
-          const progress = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          el.textContent = Math.floor(eased * target) + suffix;
-          if (progress < 1) requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-        counterObs.unobserve(el);
-      });
-    },
-    { threshold: 0.5 }
-  );
-  counters.forEach((c) => counterObs.observe(c));
+  /* Stats are real text in the HTML (20+, 100+, 15+). They are not
+     counted up from zero, so crawlers and no-JS readers see the figures. */
 
   /* ── Skill card mouse glow ── */
   document.querySelectorAll(".skill-card").forEach((card) => {

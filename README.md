@@ -1,138 +1,71 @@
-<div align="center">
-
 # Önder Yıldırım
 
-### Attorney · Software Architect · AI Engineer
+**Attorney at the Istanbul Bar · Full-stack software architect · AI engineer**
+Istanbul, Turkey · Turkish, English, French
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-ondery.github.io%2Fondery-d4a574?style=for-the-badge&logoColor=white)](https://ondery.github.io/ondery/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-@onder--yildirim-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/onder-yildirim/)
-[![Email](https://img.shields.io/badge/Email-ondery777@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ondery777@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-@ondery-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ondery)
+Önder Yıldırım (Necmettin Önder Yıldırım) is a licensed attorney and a full-stack software architect based in Istanbul. He has practiced at [Yıldırım & Yurdaöl Law Office](https://ondery.github.io/ondery/#legal) since 2006 and has worked in software for more than 20 years. He is the founder and lead architect of [Bluetree](https://github.com/bluetreetr) (formerly LawToolsAI), a legal AI platform built with Next.js, LangGraph, RAG, and MCP.
 
-<br>
+**Portfolio:** [ondery.github.io/ondery](https://ondery.github.io/ondery/)
+**Latest project:** [SignLens Trainer Studio (2026)](https://ondery.github.io/ondery/trainer-studio/)
+**Email:** [ondery777@gmail.com](mailto:ondery777@gmail.com)
+**LinkedIn:** [linkedin.com/in/onder-yildirim](https://www.linkedin.com/in/onder-yildirim/)
+**Plain-language summary:** [llms.txt](https://ondery.github.io/ondery/llms.txt)
 
-<img src="https://readme-typing-svg.demolab.com?font=Instrument+Serif&size=28&duration=3000&pause=1000&color=D4A574&center=true&vCenter=true&width=650&lines=Istanbul+Bar+Attorney;Software+Architect;Honor+Graduate+%40+Istanbul+University+Software;Legal+Tech+%26+AI+Platform+Builder;20%2B+Years+of+Experience" alt="Typing SVG" />
+<img src="./assets/portrait.jpg" width="480" alt="Portrait of Önder Yıldırım, attorney and software architect in Istanbul">
 
-<br><br>
+## Latest — SignLens Trainer Studio (2026)
 
-<img src="./mywave2.png" width="650" alt="Önder Yıldırım" />
+[SignLens Trainer Studio](https://ondery.github.io/ondery/trainer-studio/) is the local, browser-based YOLO training studio for **SignLens**, an offline traffic-sign reader for iOS and Android.
 
-<br><br>
+- Python web app at `127.0.0.1`, started with a `.bat` file on Windows 11. It is not a public site. The SignLens source is private and is not linked here.
+- Tuned for a 6 GB RTX 3060 laptop GPU (Ultralytics, CUDA PyTorch).
+- Simple mode is a five-step wizard in plain Turkish: add photos or frames (video and YouTube) → label signs → train → test → send to iPhone.
+- Presets: **Quick** 10 epochs `yolo11n` 640 batch 8; **Normal** 50 epochs; **Best** 100 epochs `yolo11s` batch 4.
+- The accuracy on screen is **mAP50 read from `results.csv`**. The studio does not invent metrics.
+- The iPhone step writes `ios/signlens.pt`. Codemagic converts it to Core ML.
+- Also: expert hyperparameters, Roboflow YOLOv8 and GTSDB/GTSRB import, a TR/DE/Vienna sign catalog, per-vehicle speed limits (`vehicle_rules`), and pytest.
 
-> **Istanbul, Turkey** — Where law meets code. Licensed attorney at the Istanbul Bar,
-> honor graduate from Istanbul University Software Department, and full-stack architect with 20+ years of experience.
+## Law and software
 
-<br>
-
-[**→ Visit Interactive Portfolio (EN / TR / FR)**](https://ondery.github.io/ondery/)
-
-Supports **English**, **Turkish**, and **French** · **Dark / Light** theme toggle
-
-</div>
-
----
-
-## ⚖️ + 💻 Dual Career
-
-| | **Law** | **Technology** |
+| | Law | Technology |
 |---|---|---|
-| **Role** | Licensed Attorney · Istanbul Bar | Software Architect · Full-Stack Engineer |
-| **Organization** | Yıldırım & Yurdaöl Law Office | Crypto & Blockchain Software · LawToolsAI (Founder) |
-| **Education** | LL.B. — Eastern Mediterranean University | Software Department — Istanbul University *(Honors)* |
-| **Focus** | Commercial, IP, Transport, Labor Law | Legal Tech, AI, RAG, Crypto & Blockchain Systems |
-| **Languages** | Turkish, English, French | TypeScript, Python, Go, Java, PHP |
+| Role | Licensed attorney, Istanbul Bar | Software architect, full-stack engineer, AI engineer |
+| Organization | Yıldırım & Yurdaöl Law Office (since 2006) | Bluetree, founder and lead architect (formerly LawToolsAI). Earlier crypto and blockchain software |
+| Education | LL.B., Eastern Mediterranean University, Cyprus, 2000–2004 | Software Department, Istanbul University, associate degree, 2023–2025, High Honor Student (Onur Öğrencisi) |
+| Focus | Commercial, IP, transport, labor, enforcement, family | Legal tech, RAG, LangGraph, MCP, computer vision |
+| Languages | Turkish, English, French | TypeScript, Python, Go, Java, PHP |
 
----
+## Selected work
 
-## 🎓 Education & Credentials
+| Project | What it is | Stack |
+|---|---|---|
+| [SignLens Trainer Studio](https://ondery.github.io/ondery/trainer-studio/) | Local YOLO training studio for the offline SignLens traffic-sign reader (2026) | Python, Ultralytics, CUDA PyTorch, Core ML |
+| [Bluetree](https://github.com/bluetreetr) | Multi-tenant legal AI platform. Founder and lead architect. Formerly LawToolsAI | Next.js, LangGraph, RAG, MCP, Prisma |
+| [Eskici](https://github.com/eskici-app) (private) | Bulky-item pickup, tendered transport, regional warehouses, and a low-price second-hand market | Next.js, Express, Prisma, PostgreSQL, Redis, Docker, Kubernetes |
+| [Tahsilat Orkestra](https://github.com/tahsilat-orkestra) (private) | Multi-tenant payment orchestration. Card data does not touch its servers | Next.js, TypeScript, Prisma, PostgreSQL RLS |
+| [DeponentAI](https://github.com/deponent-ai) (private) | Signed, hash-chained content attestations without storing the files | Next.js, Prisma, LiteLLM, C2PA, ONNX Runtime, MCP |
+| [Golder](https://github.com/golder-app) (private) | Gold-jewellery commerce with live pricing and a checkout price lock | Next.js, Prisma, PostgreSQL, iyzico |
+| [Sera Platformu](https://github.com/seraplatform) (private) | Multi-tenant greenhouse monitoring and control over MQTT | Next.js, Auth.js, Prisma, MQTT, Leaflet |
+| [Meridian Fractional](https://github.com/meridian-fractional) (private) | Fractional ownership of real-world assets on Avalanche | Next.js, Solidity, Hardhat, wagmi, viem |
+| [MiLED](https://github.com/refactor-deck) (private) | Stream Deck plugin for the Xiaomi Mi LED Desk Lamp 1S, on the local network | TypeScript, Stream Deck SDK |
+| [AudioForge Pro](https://github.com/refactor-deck) (private) | Stream Deck plugin for Windows volume and OBS audio filters | TypeScript, Stream Deck SDK, obs-websocket |
+| [Quick Translator](https://github.com/ondery/quick-translator) | Chrome extension: in-place translation of a selection or a page, with speech | JavaScript, Chrome Manifest V3 |
+| [RAGFlow](https://github.com/ondery/ragflow) | Work on an open-source RAG engine | Go, Python |
+| [ONLYOFFICE](https://github.com/ondery/DocumentServer) | Document-server integration | JavaScript, Node.js |
+| [Outliner](https://github.com/ondery/outliner) | Hierarchical notes | TypeScript |
+| [World Cup 2026](https://github.com/ondery/world-cup-2026) | Tournament pages: scores, calendar, statistics | HTML, CSS, JavaScript |
+| [NeuraFlow](https://github.com/ondery/neuraflow) | AI workflow automation with a visual builder | AI workflows |
 
-- **Software Department** — Istanbul University *(Honor Graduate)* · 2009–2013
-- **LL.B. Law** — Eastern Mediterranean University, Cyprus · 2000–2004
-- **Istanbul Bar Association** — Licensed Attorney
-- **Ankara Tevfik Fikret High School**
+## Stack
 
----
+TypeScript, React, Next.js, Node.js, Python, Go, Java, PHP, PostgreSQL, MySQL, MongoDB, Redis, Qdrant, Docker, Linux, LangGraph, RAG, MCP, Ultralytics YOLO.
 
-## 🏗️ Tech Stack
+## Contact
 
-<table>
-<tr>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=ts" width="48" alt="TypeScript" /><br><sub>TypeScript</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=react" width="48" alt="React" /><br><sub>React</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=nextjs" width="48" alt="Next.js" /><br><sub>Next.js</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=nodejs" width="48" alt="Node.js" /><br><sub>Node.js</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=python" width="48" alt="Python" /><br><sub>Python</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=go" width="48" alt="Go" /><br><sub>Go</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=java" width="48" alt="Java" /><br><sub>Java</sub></td>
-</tr>
-<tr>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=mysql" width="48" alt="MySQL" /><br><sub>MySQL</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=postgres" width="48" alt="PostgreSQL" /><br><sub>PostgreSQL</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=mongodb" width="48" alt="MongoDB" /><br><sub>MongoDB</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=redis" width="48" alt="Redis" /><br><sub>Redis</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=docker" width="48" alt="Docker" /><br><sub>Docker</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=linux" width="48" alt="Linux" /><br><sub>Linux</sub></td>
-<td align="center" width="96"><img src="https://skillicons.dev/icons?i=git" width="48" alt="Git" /><br><sub>Git</sub></td>
-</tr>
-</table>
+- Email: [ondery777@gmail.com](mailto:ondery777@gmail.com)
+- LinkedIn: [/in/onder-yildirim](https://www.linkedin.com/in/onder-yildirim/)
+- GitHub: [@ondery](https://github.com/ondery)
+- WeChat: `onderyyy`
+- Location: Istanbul, Turkey
 
----
-
-## 🚀 Featured Projects
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| ♻️ **[Eskici](https://github.com/eskici-app)** <sub>🔒 Private</sub> | Free bulky-item pickup service with tendered transport & regional warehouses and a low-price second-hand marketplace. | Next.js, Express microservices, Prisma/PostgreSQL, Redis, iyzico, Docker/Kubernetes |
-| 💳 **[Tahsilat Orkestra](https://github.com/tahsilat-orkestra)** <sub>🔒 Private</sub> | Multi-tenant payment-orchestration API routing checkouts to licensed providers by fee, instalment and health with seamless failover; card data never touches its servers. | Next.js, TypeScript, Prisma + PostgreSQL (RLS), Docker |
-| 🔏 **[DeponentAI](https://github.com/deponent-ai)** <sub>🔒 Private</sub> | AI "sworn-witness" service issuing Ed25519-signed, hash-chained, publicly verifiable content attestations without storing files. | Next.js 16, Prisma/PostgreSQL, LiteLLM, C2PA, ONNX Runtime, MCP server |
-| 💍 **[Golder](https://github.com/golder-app)** <sub>🔒 Private</sub> | Gold jewellery e-commerce with live gold-price pricing, checkout price lock, in-store sales and e-invoicing. | Next.js, Prisma/PostgreSQL, iyzico, Docker |
-| 🌱 **[Sera Platformu](https://github.com/seraplatform)** <sub>🔒 Private</sub> | Multi-tenant remote monitoring and control for greenhouse hardware (sensors, valves, vents, cameras) over MQTT. | Next.js 15, Auth.js, Prisma/PostgreSQL, MQTT, Leaflet |
-| 🪙 **[Meridian Fractional](https://github.com/meridian-fractional)** <sub>🔒 Private</sub> | Tokenized fractional ownership of real-world assets on Avalanche with marketplace, governance and revenue sharing. | Next.js 15, Solidity/Hardhat, wagmi/viem, Prisma |
-| 💡 **[MiLED](https://github.com/refactor-deck)** <sub>🔒 Private</sub> | Stream Deck + plugin controlling the Xiaomi Mi LED Desk Lamp 1S locally (brightness, power, color temperature). | TypeScript, Elgato Stream Deck SDK |
-| 🎚️ **[AudioForge Pro](https://github.com/refactor-deck)** <sub>🔒 Private</sub> | Stream Deck + plugin for Windows master volume/mute with live meter and OBS audio filter control. | TypeScript, Stream Deck SDK, obs-websocket |
-| 🌐 **[Quick Translator](https://github.com/ondery/quick-translator)** <sub>Open source</sub> | Lightweight Chrome extension translating selected text and whole pages in place, with text-to-speech. | JavaScript, Chrome Manifest V3 |
-| ⚖️ **LawToolsAI** | Multi-tenant legal AI platform (Founder) | Next.js, LangGraph, MCP, RAG, Prisma |
-| 🔍 **[RAGFlow](https://github.com/ondery/ragflow)** | Open-source RAG engine development | Go, Python |
-| 📄 **[ONLYOFFICE](https://github.com/ondery/DocumentServer)** | Document server integration | JavaScript, Node.js |
-| 📝 **[Outliner](https://github.com/ondery/outliner)** | Hierarchical note-taking tool | TypeScript |
-| ⚽ **[World Cup 2026](https://github.com/ondery/world-cup-2026)** | Interactive tournament experience | HTML, CSS, JS |
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=ondery&show_icons=true&theme=react&hide_border=true&bg_color=0d1117&title_color=d4a574&icon_color=d4a574&text_color=c9d1d9" alt="GitHub Stats" />
-&nbsp;
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ondery&layout=compact&theme=react&hide_border=true&bg_color=0d1117&title_color=d4a574&text_color=c9d1d9" alt="Top Languages" />
-
-<br><br>
-
-<img height="180" src="https://streak-stats.demolab.com?user=ondery&theme=react&hide_border=true&background=0d1117&ring=d4a574&fire=d4a574&currStreakLabel=d4a574&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&stroke=30363d" alt="GitHub Streak" />
-
-</div>
-
----
-
-## 📫 Contact
-
-<div align="center">
-
-| | |
-|---|---|
-| ✉️ **Email** | [ondery777@gmail.com](mailto:ondery777@gmail.com) |
-| 💼 **LinkedIn** | [/in/onder-yildirim](https://www.linkedin.com/in/onder-yildirim/) |
-| 💬 **WeChat** | `onderyyy` |
-| 🐙 **GitHub** | [@ondery](https://github.com/ondery) |
-| 📍 **Location** | Istanbul, Turkey |
-
-</div>
-
-<br>
-
-<div align="center">
-
-<sub>🌐 Portfolio available in <strong>English</strong>, <strong>Turkish</strong> and <strong>French</strong></sub>
-
-</div>
+The portfolio is in English, Turkish, and French, with a dark and a light theme.

@@ -1,0 +1,55 @@
+# robots.txt for the Önder Yıldırım portfolio.
+# Published at https://ondery.github.io/ondery/robots.txt
+# (GitHub project Pages cannot replace the host-root file at ondery.github.io/robots.txt.)
+# The portfolio is public biographical information. Answer-engine crawlers may fetch it.
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://ondery.github.io/ondery/sitemap.xml
+# LLM summary: https://ondery.github.io/ondery/llms.txt
