@@ -41,6 +41,7 @@
         trainerTitle: "Trainer Studio",
         trainerDesc:
           "Local, browser-based studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode.",
+        trainerNote: "Private project",
         viewBluetree: "Bluetree organization on GitHub",
         viewEskici: "Eskici organization on GitHub (private)",
         viewTahsilat: "Tahsilat Orkestra organization on GitHub (private)",
@@ -100,6 +101,7 @@
         trainerTitle: "Trainer Studio",
         trainerDesc:
           "Görüntü etiketleyip özel YOLO nesne algılama modelleri eğitmek için yerel, tarayıcı tabanlı stüdyo; adım adım rehberli mod ve uzman modu var.",
+        trainerNote: "Özel proje",
         viewBluetree: "Bluetree GitHub organizasyonu",
         viewEskici: "Eskici GitHub organizasyonu (özel)",
         viewTahsilat: "Tahsilat Orkestra GitHub organizasyonu (özel)",
@@ -159,6 +161,7 @@
         trainerTitle: "Trainer Studio",
         trainerDesc:
           "Studio local dans le navigateur pour annoter des images et entraîner des modèles YOLO de détection d'objets, avec un mode guidé pas à pas et un mode expert.",
+        trainerNote: "Projet privé",
         viewBluetree: "Organisation GitHub de Bluetree",
         viewEskici: "Organisation GitHub d'Eskici (privée)",
         viewTahsilat: "Organisation GitHub de Tahsilat Orkestra (privée)",
