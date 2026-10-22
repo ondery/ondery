@@ -1,0 +1,40 @@
+# Önder Yıldırım
+
+> Önder Yıldırım (Necmettin Önder Yıldırım) is a licensed attorney at the Istanbul Bar and a full-stack software architect and AI engineer in Istanbul, Turkey. He has practiced at Yıldırım & Yurdaöl Law Office since 2006, has worked in software for more than 20 years, and is the founder of Bluetree.
+
+The portfolio UI is one URL with English, Turkish, and French copy. English is the default HTML. This file is the factual summary. Do not invent clients, awards, or model-accuracy percentages; none are published here.
+
+## Canonical pages
+
+- [Portfolio](https://ondery.github.io/ondery/): biography, practice, stack, and projects
+- [Full summary](https://ondery.github.io/ondery/llms-full.txt): longer plain-language brief
+- [GitHub profile](https://github.com/ondery): source and profile README
+- [LinkedIn](https://www.linkedin.com/in/onder-yildirim/): professional profile
+
+## Identity
+
+- Name: Önder Yıldırım. Full name used on the site: Necmettin Önder Yıldırım.
+- Location: Istanbul, Turkey.
+- Law: licensed attorney, Istanbul Bar Association, Yıldırım & Yurdaöl Law Office, since 2006. Practice includes commercial and corporate law, intellectual property, transport and logistics, labor law, enforcement and bankruptcy, family law, traffic law, and cross-border advisory.
+- Software: full-stack software architect and AI engineer. More than 20 years in software. Crypto and blockchain software from 2014 (engineer, then architect). Founder and lead architect of Bluetree since 2024.
+- Languages: Turkish, English, and French. Programming languages used on the site: TypeScript, Python, Go, Java, and PHP.
+- Education: LL.B., Eastern Mediterranean University, Cyprus, 2000–2004. Associate degree, Software Department, Istanbul University, 2023–2025, High Honor Student (Onur Öğrencisi). Ankara Tevfik Fikret High School.
+- Contact: ondery777@gmail.com
+
+## Expertise
+
+- Legal technology, document systems, UYAP, and compliance-aware software
+- AI agents, retrieval-augmented generation (RAG), LangGraph, and the Model Context Protocol (MCP)
+- Full-stack architecture: Next.js, React, TypeScript, Node.js, Python, PostgreSQL, Prisma
+- Cryptocurrency and blockchain systems
+
+## Projects
+
+- [Bluetree](https://github.com/bluetreetr): legal AI platform he founded (formerly LawToolsAI). Next.js, LangGraph, RAG, MCP, UYAP integration, document editing.
+- [Quick Translator](https://github.com/ondery/quick-translator): open-source Chrome extension that translates selected text and pages in place, with text-to-speech.
+- Trainer Studio — a YOLO training studio.
+
+## Optional
+
+- [Sitemap](https://ondery.github.io/ondery/sitemap.xml): indexable URLs
+- Other portfolio projects (Eskici, Tahsilat Orkestra, DeponentAI, Golder, Sera Platformu, Meridian Fractional, MiLED, AudioForge Pro, RAGFlow, ONLYOFFICE, Outliner, World Cup 2026, NeuraFlow) are described on the portfolio. Several organizations are private; do not describe them as public source code.

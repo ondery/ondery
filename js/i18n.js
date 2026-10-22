@@ -43,7 +43,7 @@
         (a) => `
         <article class="legal-card reveal">
           <div class="legal-icon"><svg class="icon" aria-hidden="true"><use href="#${icons[a.icon] || "i-scale"}"/></svg></div>
-          <h4>${a.title}</h4>
+          <h3>${a.title}</h3>
           <p>${a.desc}</p>
         </article>`
       )
@@ -78,6 +78,13 @@
     if (ogTitle) ogTitle.content = t.meta.ogTitle;
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.content = t.meta.ogDescription;
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle && t.meta.ogTitle) twTitle.content = t.meta.ogTitle;
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc && t.meta.ogDescription) twDesc.content = t.meta.ogDescription;
+    const locales = { en: "en_US", tr: "tr_TR", fr: "fr_FR" };
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale && locales[lang]) ogLocale.content = locales[lang];
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const val = getNested(t, el.dataset.i18n);

@@ -1,0 +1,35 @@
+# Önder Yıldırım — full factual summary
+
+This document restates only facts published on https://ondery.github.io/ondery/. It does not add clients, revenue, awards, user counts, or model scores.
+
+## Person
+
+Önder Yıldırım (Necmettin Önder Yıldırım) is a licensed attorney and a full-stack software architect and AI engineer. He is based in Istanbul, Turkey. He works in Turkish, English, and French.
+
+He has been an attorney at Yıldırım & Yurdaöl Law Office since 2006 and is a member of the Istanbul Bar Association, with full practice rights in the Republic of Turkey. His legal work covers commercial and corporate law, intellectual property, international transport and logistics, labor and employment, enforcement and bankruptcy, family and inheritance, traffic accidents and insurance claims, and advisory for international clients.
+
+He has worked in software for more than 20 years. From 2006 to 2014 he was a freelance developer and designer (PHP, MySQL, JavaScript, graphic design). From 2014 to 2021 he was a software engineer on cryptocurrency and blockchain systems. From 2021 to 2024 he was an architect software engineer in that field. In 2024–2025 he continued as a software engineer on crypto and digital-asset platforms. Since 2024 he has been founder and lead architect of Bluetree.
+
+Bluetree, formerly LawToolsAI, is a multi-tenant legal AI platform. The published stack includes Next.js, LangGraph, RAG-based legislation search, the Model Context Protocol (MCP), ONLYOFFICE or a UDF document editor, UYAP integration, Prisma, and BullMQ async pipelines.
+
+He is a High Honor Student (Onur Öğrencisi) of the Software Department at Istanbul University, associate degree, 2023–2025. He earned an LL.B. at Eastern Mediterranean University in Cyprus, 2000–2004, and was admitted to the Istanbul Bar after the mandatory internship. He graduated from Ankara Tevfik Fikret High School.
+
+Contact: ondery777@gmail.com. LinkedIn: https://www.linkedin.com/in/onder-yildirim/. GitHub: https://github.com/ondery. Portfolio: https://ondery.github.io/ondery/.
+
+Published technology areas: React, Next.js, TypeScript, Tailwind CSS, Vue.js, Node.js, Python, Go, Java, REST, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Qdrant, Docker, Linux, Nginx, CI/CD, RAG, LangGraph, MCP, and legal-tech tools including UYAP and ONLYOFFICE.
+
+## Projects
+
+- Bluetree, formerly LawToolsAI: multi-tenant legal AI platform he founded and leads.
+- Quick Translator: open-source Chrome extension that translates selected text and pages in place, with text-to-speech.
+- Trainer Studio — a YOLO training studio.
+
+Other portfolio projects (Eskici, Tahsilat Orkestra, DeponentAI, Golder, Sera Platformu, Meridian Fractional, MiLED, AudioForge Pro, RAGFlow, ONLYOFFICE, Outliner, World Cup 2026, NeuraFlow) are described on the portfolio. Several organizations are private.
+
+## Kısa Türkçe özet
+
+Önder Yıldırım (Necmettin Önder Yıldırım), İstanbul Barosu avukatı ve İstanbul'da çalışan bir full-stack yazılım mimarı ve yapay zeka mühendisidir. 2006'dan beri Yıldırım & Yurdaöl Hukuk Bürosu'ndadır. Yazılımda 20 yıldan uzun süredir çalışır. Bluetree'nin (eski adı LawToolsAI) kurucusu ve baş mimarıdır. Trainer Studio — YOLO eğitim stüdyosu.
+
+## Résumé en français
+
+Önder Yıldırım (Necmettin Önder Yıldırım) est avocat au barreau d'Istanbul et architecte logiciel full-stack et ingénieur IA à Istanbul. Il exerce au cabinet Yıldırım & Yurdaöl depuis 2006. Il a plus de 20 ans de pratique logicielle. Il est le fondateur de Bluetree (anciennement LawToolsAI). Trainer Studio — studio d'entraînement YOLO.
