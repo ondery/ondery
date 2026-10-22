@@ -32,7 +32,7 @@ The portfolio UI is one URL with English, Turkish, and French copy. English is t
 
 - [Bluetree](https://github.com/bluetreetr): legal AI platform he founded (formerly LawToolsAI). Next.js, LangGraph, RAG, MCP, UYAP integration, document editing.
 - [Quick Translator](https://github.com/ondery/quick-translator): open-source Chrome extension that translates selected text and pages in place, with text-to-speech.
-- Trainer Studio — a YOLO training studio.
+- Trainer Studio — Local, browser-based studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode.
 
 ## Optional
 

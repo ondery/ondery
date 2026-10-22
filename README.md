@@ -91,7 +91,7 @@ Supports **English**, **Turkish**, and **French** · **Dark / Light** theme togg
 | 💡 **[MiLED](https://github.com/refactor-deck)** <sub>🔒 Private</sub> | Stream Deck + plugin controlling the Xiaomi Mi LED Desk Lamp 1S locally (brightness, power, color temperature). | TypeScript, Elgato Stream Deck SDK |
 | 🎚️ **[AudioForge Pro](https://github.com/refactor-deck)** <sub>🔒 Private</sub> | Stream Deck + plugin for Windows master volume/mute with live meter and OBS audio filter control. | TypeScript, Stream Deck SDK, obs-websocket |
 | 🌐 **[Quick Translator](https://github.com/ondery/quick-translator)** <sub>Open source</sub> | Lightweight Chrome extension translating selected text and whole pages in place, with text-to-speech. | JavaScript, Chrome Manifest V3 |
-| 🎯 **Trainer Studio** | YOLO training studio. | Python, YOLO |
+| 🎯 **Trainer Studio** | Local, browser-based studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode. | Python, Ultralytics YOLO, PyTorch |
 | ⚖️ **LawToolsAI** | Multi-tenant legal AI platform (Founder) | Next.js, LangGraph, MCP, RAG, Prisma |
 | 🔍 **[RAGFlow](https://github.com/ondery/ragflow)** | Open-source RAG engine development | Go, Python |
 | 📄 **[ONLYOFFICE](https://github.com/ondery/DocumentServer)** | Document server integration | JavaScript, Node.js |
