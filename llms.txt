@@ -32,7 +32,8 @@ The portfolio UI is one URL with English, Turkish, and French copy. English is t
 
 - [Bluetree](https://github.com/bluetreetr): legal AI platform he founded (formerly LawToolsAI). Next.js, LangGraph, RAG, MCP, UYAP integration, document editing.
 - [Quick Translator](https://github.com/ondery/quick-translator): open-source Chrome extension that translates selected text and pages in place, with text-to-speech.
-- Trainer Studio — Local, browser-based studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode.
+- [Trainer Studio](https://github.com/ondery/TrainerStudio): public, open-source, local-first studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode.
+- [Multi Repo Sync](https://github.com/ondery/multi-repo-sync): public, open-source VS Code and Cursor sidebar for Git and GitHub actions across many repositories. Sync is only one step.
 
 ## Optional
 

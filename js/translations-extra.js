@@ -41,7 +41,11 @@
         trainerTitle: "Trainer Studio",
         trainerDesc:
           "Local, browser-based studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode.",
-        trainerNote: "Private project",
+        viewTrainer: "Trainer Studio source on GitHub",
+        syncTitle: "Multi Repo Sync",
+        syncDesc:
+          "VS Code and Cursor sidebar for Git and GitHub actions across many repositories. Sync is only one step.",
+        viewSync: "Multi Repo Sync source on GitHub",
         viewBluetree: "Bluetree organization on GitHub",
         viewEskici: "Eskici organization on GitHub (private)",
         viewTahsilat: "Tahsilat Orkestra organization on GitHub (private)",
@@ -101,7 +105,11 @@
         trainerTitle: "Trainer Studio",
         trainerDesc:
           "Görüntü etiketleyip özel YOLO nesne algılama modelleri eğitmek için yerel, tarayıcı tabanlı stüdyo; adım adım rehberli mod ve uzman modu var.",
-        trainerNote: "Özel proje",
+        viewTrainer: "Trainer Studio kaynak kodu (GitHub)",
+        syncTitle: "Multi Repo Sync",
+        syncDesc:
+          "Birçok depoda Git ve GitHub işlemleri için VS Code ve Cursor kenar çubuğu. Depoları ve adımları siz seçersiniz; senkronizasyon bunlardan yalnızca biridir.",
+        viewSync: "Multi Repo Sync kaynak kodu (GitHub)",
         viewBluetree: "Bluetree GitHub organizasyonu",
         viewEskici: "Eskici GitHub organizasyonu (özel)",
         viewTahsilat: "Tahsilat Orkestra GitHub organizasyonu (özel)",
@@ -161,7 +169,11 @@
         trainerTitle: "Trainer Studio",
         trainerDesc:
           "Studio local dans le navigateur pour annoter des images et entraîner des modèles YOLO de détection d'objets, avec un mode guidé pas à pas et un mode expert.",
-        trainerNote: "Projet privé",
+        viewTrainer: "Code source de Trainer Studio sur GitHub",
+        syncTitle: "Multi Repo Sync",
+        syncDesc:
+          "Barre latérale VS Code et Cursor pour les actions Git et GitHub sur plusieurs dépôts. Vous choisissez les dépôts et les étapes ; la synchronisation n'en est qu'une.",
+        viewSync: "Code source de Multi Repo Sync sur GitHub",
         viewBluetree: "Organisation GitHub de Bluetree",
         viewEskici: "Organisation GitHub d'Eskici (privée)",
         viewTahsilat: "Organisation GitHub de Tahsilat Orkestra (privée)",

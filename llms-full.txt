@@ -21,15 +21,16 @@ Published technology areas: React, Next.js, TypeScript, Tailwind CSS, Vue.js, No
 ## Projects
 
 - Bluetree, formerly LawToolsAI: multi-tenant legal AI platform he founded and leads.
-- Quick Translator: open-source Chrome extension that translates selected text and pages in place, with text-to-speech.
-- Trainer Studio — Local, browser-based studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode.
+- Quick Translator: open-source Chrome extension that translates selected text and pages in place, with text-to-speech. Source: https://github.com/ondery/quick-translator
+- Trainer Studio: public, open-source, local-first studio for labeling images and training custom YOLO object-detection models, with a guided step-by-step mode and an expert mode. Source: https://github.com/ondery/TrainerStudio
+- Multi Repo Sync: public, open-source VS Code and Cursor sidebar for Git and GitHub actions across many repositories. Sync is only one step. Source: https://github.com/ondery/multi-repo-sync
 
 Other portfolio projects (Eskici, Tahsilat Orkestra, DeponentAI, Golder, Sera Platformu, Meridian Fractional, MiLED, AudioForge Pro, RAGFlow, ONLYOFFICE, Outliner, World Cup 2026, NeuraFlow) are described on the portfolio. Several organizations are private.
 
 ## Kısa Türkçe özet
 
-Önder Yıldırım (Necmettin Önder Yıldırım), İstanbul Barosu avukatı ve İstanbul'da çalışan bir full-stack yazılım mimarı ve yapay zeka mühendisidir. 2006'dan beri Yıldırım & Yurdaöl Hukuk Bürosu'ndadır. Yazılımda 20 yıldan uzun süredir çalışır. Bluetree'nin (eski adı LawToolsAI) kurucusu ve baş mimarıdır. Trainer Studio: Görüntü etiketleyip özel YOLO nesne algılama modelleri eğitmek için yerel, tarayıcı tabanlı stüdyo; adım adım rehberli mod ve uzman modu var.
+Önder Yıldırım (Necmettin Önder Yıldırım), İstanbul Barosu avukatı ve İstanbul'da çalışan bir full-stack yazılım mimarı ve yapay zeka mühendisidir. 2006'dan beri Yıldırım & Yurdaöl Hukuk Bürosu'ndadır. Yazılımda 20 yıldan uzun süredir çalışır. Bluetree'nin (eski adı LawToolsAI) kurucusu ve baş mimarıdır. Trainer Studio herkese açık bir depodur (https://github.com/ondery/TrainerStudio): görüntü etiketleyip özel YOLO nesne algılama modelleri eğitmek için yerel, tarayıcı tabanlı stüdyo. Multi Repo Sync herkese açık bir depodur (https://github.com/ondery/multi-repo-sync): birçok depoda Git ve GitHub işlemleri için VS Code ve Cursor kenar çubuğu.
 
 ## Résumé en français
 
-Önder Yıldırım (Necmettin Önder Yıldırım) est avocat au barreau d'Istanbul et architecte logiciel full-stack et ingénieur IA à Istanbul. Il exerce au cabinet Yıldırım & Yurdaöl depuis 2006. Il a plus de 20 ans de pratique logicielle. Il est le fondateur de Bluetree (anciennement LawToolsAI). Trainer Studio : Studio local dans le navigateur pour annoter des images et entraîner des modèles YOLO de détection d'objets, avec un mode guidé pas à pas et un mode expert.
+Önder Yıldırım (Necmettin Önder Yıldırım) est avocat au barreau d'Istanbul et architecte logiciel full-stack et ingénieur IA à Istanbul. Il exerce au cabinet Yıldırım & Yurdaöl depuis 2006. Il a plus de 20 ans de pratique logicielle. Il est le fondateur de Bluetree (anciennement LawToolsAI). Trainer Studio est un dépôt public (https://github.com/ondery/TrainerStudio) : studio local dans le navigateur pour annoter des images et entraîner des modèles YOLO. Multi Repo Sync est un dépôt public (https://github.com/ondery/multi-repo-sync) : barre latérale VS Code et Cursor pour les actions Git et GitHub sur plusieurs dépôts.
