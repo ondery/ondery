@@ -46,10 +46,8 @@
         syncDesc:
           "VS Code and Cursor sidebar for Git and GitHub actions across many repositories. Sync is only one step.",
         viewSync: "Multi Repo Sync source on GitHub",
-        viewBluetree: "Bluetree organization on GitHub",
         viewEskici: "Eskici organization on GitHub (private)",
         viewTahsilat: "Tahsilat Orkestra organization on GitHub (private)",
-        viewDeponent: "DeponentAI organization on GitHub (private)",
         viewGolder: "Golder organization on GitHub (private)",
         viewSera: "Sera Platformu organization on GitHub (private)",
         viewMeridian: "Meridian Fractional organization on GitHub (private)",
@@ -110,10 +108,8 @@
         syncDesc:
           "Birçok depoda Git ve GitHub işlemleri için VS Code ve Cursor kenar çubuğu. Depoları ve adımları siz seçersiniz; senkronizasyon bunlardan yalnızca biridir.",
         viewSync: "Multi Repo Sync kaynak kodu (GitHub)",
-        viewBluetree: "Bluetree GitHub organizasyonu",
         viewEskici: "Eskici GitHub organizasyonu (özel)",
         viewTahsilat: "Tahsilat Orkestra GitHub organizasyonu (özel)",
-        viewDeponent: "DeponentAI GitHub organizasyonu (özel)",
         viewGolder: "Golder GitHub organizasyonu (özel)",
         viewSera: "Sera Platformu GitHub organizasyonu (özel)",
         viewMeridian: "Meridian Fractional GitHub organizasyonu (özel)",
@@ -174,10 +170,8 @@
         syncDesc:
           "Barre latérale VS Code et Cursor pour les actions Git et GitHub sur plusieurs dépôts. Vous choisissez les dépôts et les étapes ; la synchronisation n'en est qu'une.",
         viewSync: "Code source de Multi Repo Sync sur GitHub",
-        viewBluetree: "Organisation GitHub de Bluetree",
         viewEskici: "Organisation GitHub d'Eskici (privée)",
         viewTahsilat: "Organisation GitHub de Tahsilat Orkestra (privée)",
-        viewDeponent: "Organisation GitHub de DeponentAI (privée)",
         viewGolder: "Organisation GitHub de Golder (privée)",
         viewSera: "Organisation GitHub de Sera Platformu (privée)",
         viewMeridian: "Organisation GitHub de Meridian Fractional (privée)",
